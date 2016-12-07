@@ -1,0 +1,31 @@
+sudo adduser git
+sudo /home/git
+sudo git init --bare project217.git
+sudo chown -R git:git project217.git
+mkdir .ssh
+cd ~/.ssh/
+vim authorized_keys
+把用户端的公匙添加进去。
+
+
+普通用户安装好git之后
+然后就可以使用git了
+右键并点击Git Bash Here
+git clone git@115.159.79.211:project217.git
+就得到了最新的更新了。
+cd 
+编辑完成之后可以用
+git add .
+git commit -m "输入想要的注释"
+git push
+进行进行上传。
+下次再次编辑的时候就
+git pull
+
+之后的操作步骤就基本是
+git pull
+可能会要和本地的master合并，合并完之后就可以进行编辑了
+编辑完了之后
+git add .
+git commit -m "输入想要的注释"
+git push

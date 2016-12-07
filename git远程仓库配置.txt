@@ -1,4 +1,4 @@
-sudo adduser git
+﻿sudo adduser git
 sudo /home/git
 sudo git init --bare project217.git
 sudo chown -R git:git project217.git
@@ -29,3 +29,5 @@ git pull
 git add .
 git commit -m "输入想要的注释"
 git push
+
+//git commit -a -m "zhushi"是把unstaged的文件变成staged（这里不包括新建(untracked)的文件），然后commit

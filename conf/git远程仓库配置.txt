@@ -33,3 +33,5 @@ git push
 
 //如果git push失败了记得先git pull再push，因为远程仓库可能被别人更新过了，所以不能直接push。
 //git commit -a -m "zhushi"是把unstaged的文件变成staged（这里不包括新建(untracked)的文件），然后commit
+
+花了5个小时才成功的。真不容易啊。

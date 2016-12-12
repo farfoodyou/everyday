@@ -1,0 +1,13 @@
+diff old.cpp new.cpp
+diff -c f1 f2
+diff -u f1 f2
+
+diff -Naur old new > my.patch
+patch -p0 < my.patch
+
+呃或许在linux下这些语句应该是可以用的吧。
+
+
+linux diff详解-andersonyan-ChinaUnix博客: http://blog.chinaunix.net/uid-26000296-id-3507646.html
+
+

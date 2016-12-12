@@ -4,7 +4,7 @@
 int main(){
     int a,b;
     while(scanf("%d%d",&a,&b)==2&&a&&b){
-        int t = a*10;
+        int t = a*100;
         int ans[150],cnt=0;
         for(int i = 0; i<=9;i++){
             if((t+i)%b==0)ans[cnt++]=i;

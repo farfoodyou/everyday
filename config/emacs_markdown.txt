@@ -2,11 +2,9 @@ sudo apt-get install emacs
 sudo apt-get install markdown
 sudo apt-get install emacs-goodies-el 
 
-
 m 是meta的简称,meta键就是 alt 键
 
 http://jblevins.org/projects/markdown-mode/
-
 
 C-c C-c m: markdown-command > *markdown-output* buffer.
 C-c C-c p: markdown-command > temporary file > browser.
@@ -15,6 +13,33 @@ C-c C-c v: markdown-command > basename.html > browser.
 C-c C-c w: markdown-command > kill ring.
 C-c C-c o: markdown-open-command.
 C-c C-c l: markdown-live-preview-mode > *eww* buffer.
+
+打开本地文件用 file:// 开头或者 M-x eww-open-file .
+
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "gfm-mode"
+   "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+
+
+
+git clone https://github.com/jrblevin/markdown-mode.git
+
+
+
+(add-to-list 'load-path "/path/to/markdown-mode/repository")
+
+
+
+编辑完了之后就可以M-x markdown-mode
+来编辑markdown文件了
+C-c C-c e之后可以用可以用eww打来看预览效果
+
 
 
 

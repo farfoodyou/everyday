@@ -1,0 +1,20 @@
+sudo apt-get install emacs
+sudo apt-get install markdown
+sudo apt-get install emacs-goodies-el 
+
+
+m 是meta的简称,meta键就是 alt 键
+
+http://jblevins.org/projects/markdown-mode/
+
+
+C-c C-c m: markdown-command > *markdown-output* buffer.
+C-c C-c p: markdown-command > temporary file > browser.
+C-c C-c e: markdown-command > basename.html.
+C-c C-c v: markdown-command > basename.html > browser.
+C-c C-c w: markdown-command > kill ring.
+C-c C-c o: markdown-open-command.
+C-c C-c l: markdown-live-preview-mode > *eww* buffer.
+
+
+

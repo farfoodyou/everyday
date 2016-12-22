@@ -1,11 +1,12 @@
-#markdown show test
-##two 
-###three
-####fouth
-#####five
-######six
+# markdown show test code
+## two 
+### three
+#### fouth
+##### five
+###### six
 
-##list
+
+## list
 * 1
 * 2
 * 3
@@ -14,22 +15,22 @@
 2. 2
 3. 3
 
-##Quote
+## Quote
 > this is a quote
 
-##picture
+## picture
 
 ![baidu_logo](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png)
 
-##link
+## link
 
 [baidu](www.baidu.com)
 
-##bold
-**bold**
-##Italic
+## bold
+**bold** not bold
+## Italic
 *italic*
-##table
+## table
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
@@ -37,17 +38,10 @@
 | zebra stripes | are neat      |    $1 |
 ***
 
-```
+```c++
 #include <cstdio>
 int main(){
 	printf("Hello world！\n");
 	return 0;
 }
-
 ```
-
-
-
-
-
-

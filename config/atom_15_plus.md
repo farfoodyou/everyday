@@ -4,7 +4,9 @@
 jopen 2015-07-20 21:55:32 • 发布
 摘要：开发者的15个实用的 Atom Packages<br/>
 http://www.open-open.com/news/view/1c81d20/
-
+和我自己找到的一些插件：
+1. gpp-compiler
+2. 
 ##### 1. Color Picker
 
 color picker

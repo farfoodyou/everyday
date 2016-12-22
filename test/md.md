@@ -37,7 +37,8 @@
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 ***
-
+## Math
+$a = $
 ```c++
 #include <cstdio>
 int main(){
@@ -45,3 +46,6 @@ int main(){
 	return 0;
 }
 ```
+![avatar](doge)
+
+[doge]:data:image/png;base64,

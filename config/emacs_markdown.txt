@@ -40,6 +40,8 @@ git clone https://github.com/jrblevin/markdown-mode.git
 来编辑markdown文件了
 C-c C-c e之后可以用可以用eww打来看预览效果
 
+//事后发现，根本就没有atom方便好用。而且也没有atom漂亮
+
 
 
 

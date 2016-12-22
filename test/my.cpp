@@ -2,9 +2,9 @@
 
 int main(){
         int a;    
-        scnaf("%d",&a);
-        printf("your input is %d\n"，a);
-        ruturn 0;
+        scanf("%d",&a);
+        printf("your input is %d\n",a);
+        return 0;
 }
 
 

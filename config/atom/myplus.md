@@ -22,4 +22,4 @@
 - csslint
 - linter-csslint
 - sync-settings
-
+> 2016-12-23  17 plus

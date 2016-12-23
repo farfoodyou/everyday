@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>H5 Test</title>
+    <script type = "text/JavaScript" src = "my.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Test</h1>
+    </header>
+    <audio src="001.mp3">001.mp3</audio>
+    <p id = "pt">Test before</p>
+    <canvas id="mycanvas" width="20" height="20"></canvas>
+    <img src="001.jpg" alt="p001" />
+    <ul>
+        <li><a href="www.baidu.com">baidu</a></li>
+        <li><a href="www.github.com">github</a></li>
+        <li><a href="acm.hdu.edu.cn">hdu</a></li>
+    </ul>
+    <form id="test form" action="">
+        <input type="text">
+    </form>
+  
+        <p>
+            <progress id="p" max=100>
+            <span>0</span>%
+          </progress>
+        </p>
+        <input type="button" onlick="bo()" value="点击开始" />
+  
+</body>
+
+<nav>nac</nav>
+<footer>footer</footer>
+
+</html>
+
+<script>
+    var progressBar = document.getElementById('p');
+
+    function bo() {
+        var pt = document.getElementById('pt');
+        pt.value = "test over";
+        var progressBar = document.getElementById('p');
+        progressBar.getElementsByTagName('span')[0].textContent = "0";
+        for (var i = 0; i <= 100; i++) {
+            up(i);
+        }
+    }
+    
+    function up(nv) {
+        var pb = document.getElementById('p');
+        pb.value = nv;
+        pb.getElementsByTagName('span')[0].textContent = nv;
+    }
+</script>

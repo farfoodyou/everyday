@@ -54,7 +54,7 @@ which uncrustify
 ```
 结果还是出现了一些问题。
 我看了看官网文档
-把配置加入了～/.uncrustify
+把官方默认的配置加入了～/.uncrustify
 (⊙o⊙)…，过了一会就好了
 
 不过还有问题：
@@ -71,6 +71,8 @@ ubuntu16.04按下ctrl-alt-b出现小键盘
 5. 注销或重启电脑
 ```
 我觉得应该时可以了的。
+
+第二天打开发现，快捷键可以用了，而且对于java也可以支持了。
 
 ubuntu下的卸载：
 apt-get remove --purge xxx # 移除应用及配置

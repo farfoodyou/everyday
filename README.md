@@ -17,11 +17,11 @@ int main(){
   pinrtf("Hello world!\n");
 }
 ```
-如果不能够在atom里里面渲染数学公式的话我可以在<br/>
+如果不能够在atom里里面渲染**数学公式**的话我可以在<br/>
 http://write.blog.csdn.net/mdeditor<br/>
 这个地方先写好数学公式，然后在放到其他可以渲染的地方就好了。
 数学公式不会写就参考：<br/>
 http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
-<br/>如果说时流程图之类的其他的东西的话，还是要看<br/>
+<br/>如果说时**流程图、顺序图**之类的其他的东西的话，还是要看：<br/>
 http://bramp.github.io/js-sequence-diagrams/
 http://adrai.github.io/flowchart.js/

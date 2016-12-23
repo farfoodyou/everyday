@@ -1,0 +1,34 @@
+hosts所在文件夹：
+Windows 系统hosts位于 C:\Windows\System32\drivers\etc\hosts
+Android（安卓）系统hosts位于 /system/etc/hosts
+Mac（苹果电脑）系统hosts跟Linux一样位于 /etc/hosts
+iPhone（iOS）系统hosts跟Linux Mac一样位于 /etc/hosts
+Linux系统hosts位于 /etc/hosts
+你也可以用Notepad++ 自行转换文本编码和换行符格式。当然，老D分享的都转换好了。
+
+修改hosts后生效的方法：
+Windows
+开始 -> 运行 -> 输入cmd -> 在CMD窗口输入
+ipconfig /flushdns
+
+Linux
+终端输入
+sudo rcnscd restart
+对于systemd发行版，请使用命令
+sudo systemctl restart NetworkManager
+如果不懂请都尝试下
+
+Mac OS X终端输入
+
+sudo killall -HUP mDNSResponder
+Android
+开启飞行模式 -> 关闭飞行模式
+通用方法
+拔网线(断网) -> 插网线(重新连接网络)
+
+谷歌学术：https://scholar.google.com/
+谷歌搜索：https://www.google.com/ncr
+谷歌香港：https://www.google.com.hk/ncr
+Twitter：https://twitter.com/?lang=zh-cn
+
+

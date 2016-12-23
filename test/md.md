@@ -1,15 +1,6 @@
 # markdown show test code
-## two 
-### three
-#### fouth
-##### five
-###### six
-
 
 ## list
-* 1
-* 2
-* 3
 
 1. 1
 2. 2

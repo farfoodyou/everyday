@@ -2,6 +2,8 @@
 .myfont
 {
     size: 13px;
-    color: rgb(249, 46, 34);
+    color: rgb(34, 107, 249);
 }
-.{}
+.mydit{
+    background-color: rgb(173, 121, 231)
+}

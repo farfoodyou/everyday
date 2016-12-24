@@ -7,7 +7,7 @@
 突然发现用atom来管理文档还是非常方便的。
 然后markdown来记录在安装配置软件的过程中除了不能够保存截图，几乎可以说是完美了，它不仅仅可以用来表现一些形式。
 而且它可以内嵌HTML代码来完成对格式的要求。一些事，例如：
-> <font color = red size = 3px>红色</font>
+> `<font color = red size = 3px>红色</font>`
 <font color = yellow size = 3px>黄色</font>
 
 还有编写说明文档等。

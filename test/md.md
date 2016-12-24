@@ -1,12 +1,28 @@
 # markdown show test code
 
+## two
+
+### three
+
+#### fouth
+
+##### five
+
+###### six
+
 ## list
 
-1. 1
-2. 2
-3. 3
+- 1
+- 2
+- 3
+
+- 1
+
+- 2
+- 3
 
 ## Quote
+
 > this is a quote
 
 ## picture
@@ -18,25 +34,27 @@
 [baidu](www.baidu.com)
 
 ## bold
+
 **bold** not bold
+
 ## Italic
-*italic*
+
+_italic_
+
 ## table
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-***
-## Math
-$a = $
+
+Tables        |      Are      |  Cool
+------------- | :-----------: | ----:
+col 3 is      | right-aligned | $1600
+col 2 is      |   centered    |   $12
+zebra stripes |   are neat    |    $1
+
+--------------------------------------------------------------------------------
+
 ```c++
 #include <cstdio>
 int main(){
-	printf("Hello world！\n");
-	return 0;
+    printf("Hello world！\n");
+    return 0;
 }
 ```
-![avatar](doge)
-
-[doge]:data:image/png;base64,

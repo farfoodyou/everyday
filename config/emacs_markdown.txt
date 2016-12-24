@@ -41,7 +41,8 @@ git clone https://github.com/jrblevin/markdown-mode.git
 C-c C-c e之后可以用可以用eww打来看预览效果
 
 //事后发现，根本就没有atom方便好用。而且也没有atom漂亮
-
+//仿佛那些老旧的拥有非常长久历史的编辑器已经快要完成他们的历史使命了
+//现在是这些新的年轻软件们的时代了。
 
 
 

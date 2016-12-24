@@ -23,3 +23,10 @@
 - linter-csslint
 - sync-settings
 > 2016-12-23  17 plus
+
+
+- html-view-preview
+- terminal-plus
+- PlatformIO IDE Terminal
+- sybomls-tree-view
+

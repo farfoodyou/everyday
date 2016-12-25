@@ -5,6 +5,14 @@ p {
 li {
   color:rgb(226, 224, 46)
 }
+h4:nth-of-type(odd){
+  background-color:rgb(247, 142, 131)
+  
+}
+h4:nth-of-type(even){
+  background-color:rgb(140, 131, 247)
+  
+}
 </style>
 
 

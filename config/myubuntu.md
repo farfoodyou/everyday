@@ -32,3 +32,5 @@ terminal下
 5. xdotool
  - xdotool getmouselocation  //获取鼠标位置
 
+
+

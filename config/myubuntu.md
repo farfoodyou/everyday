@@ -35,6 +35,9 @@ terminal下
  - xdotool getmouselocation  //获取鼠标位置
 
 
+Ubuntu下ｚｉｐ中文乱码用  
+unar packname  
+就可以了。
 
 卸载软件的命令  
 Linux下彻底卸载LibreOffice方法

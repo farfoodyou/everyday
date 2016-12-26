@@ -14,6 +14,8 @@
   2. 迅雷精简版 //下载速度还可以
 6. mplayer   //源码安装功能强大，但是配置麻烦
 7. Kazam    可视化的视频录制软件
+8. WPS //ubuntu自带的文字处理软件简直就是。。。
+
 
 terminal下
 1. 用python配置有道翻译API，实现终端翻译
@@ -33,4 +35,15 @@ terminal下
  - xdotool getmouselocation  //获取鼠标位置
 
 
+
+卸载软件的命令  
+Linux下彻底卸载LibreOffice方法
+终端中输入命令：  
+对所有基于 Debian 的发行版（Debian、Ubuntu、Kubuntu、Xubuntu、*buntu、Sidux 等）：   
+sudo apt-get purge libreoffice?  
+或  
+sudo aptitude purge libreoffice?  
+不要漏掉通配符“?”，否则无法清除/卸载全部 LibreOffice 软件包  
+或者  
+sudo apt-get remove --purge libreoffice*
 

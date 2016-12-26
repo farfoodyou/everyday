@@ -1,0 +1,22 @@
+termainl-plus
+
+
+
+ping 127.0.0.1
+
+
+wins，ubuntu，通用git仓库测试。
+测试一下吧，看看在wins下git commit
+会不会对ubuntu下的git仓库产生不好的影响，如果会的话
+我以后虽然能够在wins下编辑，但是最好还是不要在wins下git commit
+
+上次好像是，我commit 之后，需要pull之类的操作才行了。
+
+
+
+为什么，它说nothing to commit
+
+
+
+
+

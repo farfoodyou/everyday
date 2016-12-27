@@ -11,5 +11,3 @@ int main(){
         printf("your input is %d\n",t);
         return 0;
 }
-
-

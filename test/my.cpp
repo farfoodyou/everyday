@@ -9,5 +9,6 @@ int main(){
           a/=10;
         }
         printf("your input is %d\n",t);
+        printf("you\n");
         return 0;
 }

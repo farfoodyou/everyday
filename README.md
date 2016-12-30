@@ -6,11 +6,11 @@
 #### 为什么要用这个方式来记录
 突然发现用atom来管理文档还是非常方便的。
 然后markdown来记录在安装配置软件的过程中除了不能够保存截图，几乎可以说是完美了，它不仅仅可以用来表现一些形式。
-而且它可以内嵌HTML代码来完成对格式的要求。一些事，例如：
-> `<font color = red size = 3px>红色</font>`
+而且它可以内嵌HTML代码来完成对格式的要求。一些事，例如：     
+<font color = red size = 3px>红色</font>
 <font color = yellow size = 3px>黄色</font>
 
-还有编写说明文档等。
+还有编写说明文档等。 
 ```c++
 #include<cstdio>
 int main(){
@@ -22,6 +22,8 @@ http://write.blog.csdn.net/mdeditor<br/>
 这个地方先写好数学公式，然后在放到其他可以渲染的地方就好了。
 数学公式不会写就参考：<br/>
 http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
-<br/>如果说时**流程图、顺序图**之类的其他的东西的话，还是要看：<br/>
-http://bramp.github.io/js-sequence-diagrams/
-http://adrai.github.io/flowchart.js/
+
+
+
+
+

@@ -1,6 +1,6 @@
 <style type = "text/css">
 p {
-  color:rgb(80, 81, 219);
+  color:rgb(80, 219, 107);
 }
 li {
   color:rgb(46, 226, 215)

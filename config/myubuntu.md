@@ -15,6 +15,7 @@
 6. mplayer   //源码安装功能强大，但是配置麻烦
 7. Kazam    可视化的视频录制软件
 8. WPS //ubuntu自带的文字处理软件简直就是。。。
+9. calibre      gitbook
 
 
 terminal下

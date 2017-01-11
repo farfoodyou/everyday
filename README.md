@@ -1,6 +1,6 @@
 ###### Createde from	2016-11-23 18:06
 #	每天都练习一遍，基本的算法；
-![logo](https://avatars0.githubusercontent.com/u/20290277?v=3&u=14d24bd330b690f6529e547fc823ae5a620a4ae1&s=400)
+![dog](/images/others/dog.jpg)
 ###### 仓库说明
 这个仓库也当做是我个人经历的总结了。里面有很多，我花了很多时间才尝试成功的，例如mplayer，sox等播放器的介绍，也有git私有远程仓库的配置等。也有一些其他的有趣的小东西，例如chrome上的tabcopy等插件。
 #### 为什么要用这个方式来记录
@@ -14,10 +14,11 @@
 还有编写说明文档等。 
 ```c++
 #include<cstdio>
-int main(){
+int main(){   
   pinrtf("Hello world!\n");
 }
 ```
+
 如果不能够在atom里里面渲染**数学公式**的话我可以在<br/>
 http://write.blog.csdn.net/mdeditor<br/>
 这个地方先写好数学公式，然后在放到其他可以渲染的地方就好了。

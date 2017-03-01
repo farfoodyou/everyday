@@ -1,0 +1,10 @@
+2
+5
+english 1
+english 2
+english 3
+math 10
+cook 100
+2
+a 1
+a 2

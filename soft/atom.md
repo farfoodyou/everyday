@@ -7,7 +7,8 @@
 2、windows : ctrl + shift + p
 mac : command + shift + p
 这条命令跟Sublime Text是一样的，打开命令输入框
-3、输入 markdown preview toggle(可以偷懒只输入mdpt，跟Sublime Text一样支持模糊匹配)
+3、输入 markdown preview toggle
+(可以偷懒只输入mdpt，跟Sublime Text一样支持模糊匹配)
 4、按enter键即可看到预览，如图，左边编辑，右边实时预览。
 
 难道说我这个是不完整的？邮编的和左边的一毛一样唉。
@@ -25,3 +26,14 @@ mac : command + shift + p
 看了知乎上的关于atom与vim和emacs的比较，
 我决定在wins和网页情况下用atom
 然后如果是开发算法里的c++的话，用vim，毕竟比赛的时候也就可能只有vim能用的。
+
+2017-05-12
+
+用atom来背单词，真的是比较合适的。
+先敲一遍，然后看着单词会议是否可以记起来他们的意思。
+如果可以就打钩，不行就跳过，把跳过的背下然后再检测。
+敲完的以后还可以反过来，检测第二遍。
+如果再点一下，打钩的就取消掉了，不行的暂时跳过，把跳过的背下然后再检测。
+
+ps: 保存好像有点慢，打开也有点慢。不过这都只是小问题。
+

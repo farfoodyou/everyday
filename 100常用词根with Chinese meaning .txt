@@ -24,7 +24,7 @@
 24.cycl = circle 圆环
 25.dem = the people 人民
 26.dic,dict = to say 说
-27.doc,doct = to reach 教
+27.doc,doct = to teach 教
 28.duc,duct = to lead 引导
 29.equ = even,equal 相等的
 30.fac,fact,fect = to do ,to make 做

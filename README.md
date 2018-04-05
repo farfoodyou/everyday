@@ -1,6 +1,9 @@
 ###### Createde from	2016-11-23 18:06
 #	每天都练习一遍，基本的算法；
-![dog](/images/others/dog.jpg)
+content: 
+ - Computer
+ - English
+ - Log
 ###### 仓库说明
 这个仓库也当做是我个人经历的总结了。里面有很多，我花了很多时间才尝试成功的，例如mplayer，sox等播放器的介绍，也有git私有远程仓库的配置等。也有一些其他的有趣的小东西，例如chrome上的tabcopy等插件。
 #### 为什么要用这个方式来记录
@@ -26,3 +29,5 @@ http://write.blog.csdn.net/mdeditor<br/>
 这个地方先写好数学公式，然后在放到其他可以渲染的地方就好了。
 数学公式不会写就参考：<br/>
 http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+
+

@@ -13,19 +13,17 @@ wine 1.9 已经可以运行 QQ 7.1 了，体验已经算是很不错了，唯一
 具体做法：
 
 为以防万一，先备份ie浏览器
-`
+
 $ cd ～/.wine/drive_c/Program\ Files\ \(x86\)/Internet\ Explorer
 $ mv iexplore.exe iexplore.exe.backup
-`
 找到自己正在用的浏览器的位置，创建软连接，比如我用的是Archlinux AUR里的google-chrome
-```
+
 $ ln -s $(which google-chrome-stable) iexplore.exe
-```
 完成！当我们再次点击QQ邮箱的图标，打开邮箱的浏览器已经变成Google-chrome了～～
 （如果你使用的是其他的浏览器，只需要把上面的google-chrome-stable改为你在终端中打开浏览器的命令就可以。）
 
 PS: 附上 google-chrome-stable 文件内容：
-```
+
 $ cat $(which google-chrome-stable)
 
 #!/bin/bash
@@ -37,4 +35,4 @@ fi
 
 #Launch
 exec /opt/google/chrome/google-chrome $CHROME_USER_FLAGS "$@"%
-```
+

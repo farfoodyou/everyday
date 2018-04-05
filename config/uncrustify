@@ -1,0 +1,5 @@
+C:\MinGW\uncrustify\cfg\defaults.cfg
+
+需要设置tab数量才能够正常使用
+
+在win下，只要把可执行文件路径添加进path路径就可以了。

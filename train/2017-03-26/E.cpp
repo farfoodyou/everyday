@@ -55,7 +55,6 @@ int main(){
 
         for(int j = 0; j < k-1; j++ ){
             if(j == 0){
-                
                 ta = cha((long long)n);
                 tta = ta;
                 continue;
@@ -73,7 +72,7 @@ int main(){
             printf("find 2\n");
             ans = cha2(tta);
             //break;
-        }
+        } 
         printf("ans = %lld\n",ans);
     }
 

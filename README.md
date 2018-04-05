@@ -11,7 +11,9 @@
 <font color = yellow size = 3px>黄色</font>   
 虽然在github上好像这种方式是无效的。
 
-还有编写说明文档等。 
+还有编写说明文档等。
+
+
 ```c++
 #include<cstdio>
 int main(){   
@@ -24,8 +26,3 @@ http://write.blog.csdn.net/mdeditor<br/>
 这个地方先写好数学公式，然后在放到其他可以渲染的地方就好了。
 数学公式不会写就参考：<br/>
 http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
-
-
-
-
-

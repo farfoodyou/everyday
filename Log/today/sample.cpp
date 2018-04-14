@@ -2,10 +2,8 @@
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
-
-
-
 using namespace std;
+
 const int inf = 1e9+5;
 const int maxn = 1e5+5;
 int N,M,K,a,b,c,ans;

@@ -60,18 +60,21 @@ static int gettok(){
 class ExprAST{
     public:
         virtual ~ExprAST(){}
+        virtual Value *Codegen() = 0;
 };
 
 class NumberExprAST :public ExprAST{
     double Val;
     public:
         NumberExprAST(double val):Val(val){}
+        virtual Value *Codegen();
 };
 
 class VariableExprAST :public ExprAST{
     std::string Name;
     public:
         VariableExprAST(const std::string &name):Name(name){}
+        virtual Value *Codegen();
 };
 
 class BinaryExprAST :public ExprAST{
@@ -79,6 +82,7 @@ class BinaryExprAST :public ExprAST{
     ExprAST *LHS, *RHS;
     public:
         BinaryExprAST(char op, ExprAST *lhs, ExprAST *rhs):Op(op),LHS(lhs),RHS(rhs){}
+        virtual Value *Codegen();
 };
 
 class CallExprAST :public ExprAST{
@@ -86,6 +90,7 @@ class CallExprAST :public ExprAST{
     std::vector<ExprAST*> Args;
     public:
         CallExprAST(const std::string &callee, std::vector<ExprAST*> &args):Callee(callee),Args(args){}
+        virtual Value *Codegen();
 };
 
 class PrototypeAST{
@@ -93,6 +98,7 @@ class PrototypeAST{
     std::vector<std::string> Args;
     public:
         PrototypeAST(const std::string &name, const std::vector<std::string> &args):Name(name), Args(args){}
+        virtual Value *Codegen();
 };
 
 class FunctionAST{
@@ -100,6 +106,7 @@ class FunctionAST{
     ExprAST *Body;
     public:
         FunctionAST(PrototypeAST *proto, ExprAST *body):Proto(proto),Body(body){}
+        virtual Value *Codegen();
 };
 
 static int CurTok;
@@ -110,7 +117,11 @@ static int getNextToken(){
 ExprAST *Error(const char *Str){fprintf(stderr, "Error: %s\n", Str);return 0;}
 PrototypeAST *ErrorP(const char *Str){Error(Str);return 0;}
 FunctionAST *ErrorF(const char *Str){Error(Str);return 0;}
+Value *ErrorV(const char *Str) { Error(Str); return 0; }
 
+static Module *TheModule;
+static IRBuilder<> Builder(getGlobalContext());
+static std::map<std::string, Value*> NamedValues;
 static ExprAST *ParseExpression();
 
 static ExprAST *ParseNumberExpr(){

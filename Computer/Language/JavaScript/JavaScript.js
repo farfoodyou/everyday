@@ -40,8 +40,8 @@ if (false) {
 }
 // 7. arrays
 var hodgepodge = [100, "paint", [200, "brush"], false];
-    // push pop length concat reverse
-
+    // push pop length concat reverse join
+    // var list = str2.split(" ");
 // 8. objects
 var course = {
     name: "GRA 2032",

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+
+    </head>
+    <body>
+        <h1>This is my vue Hello Test Script.</h1>
+        <div align="center" style="border:1px solid blue">
+            <p>This is a init p.</p>
+            <div id="app-1">
+                {{ message }}
+                <br/>
+                <span v-bind:title="message">
+                    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+                </span>
+                <br/>
+                <p v-if="seen">现在你看到我了</p>
+            </div>
+            <div id="apptest">
+                <ol>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+                </ol>
+                
+                <input v-model="message" placeholder="edit me">
+                <p v-if="message">Message is: {{ message }}</p>
+                <p v-else>Message is: username</p>
+
+                <p>{{ msg }}</p>
+                <button v-on:click="reverseMessage">逆转消息</button>
+                <br>
+                <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+                <label for="jack">Jack</label>
+                <input type="checkbox" id="john" value="John" v-model="checkedNames">
+                <label for="john">John</label>
+                <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+                <label for="mike">Mike</label>
+                <br>
+                <span>Checked names: {{ checkedNames }}</span>
+            </div>
+        </div>
+
+    </body>
+    <script>
+        var app = new Vue({
+            el: '#app-1',
+            data: {
+                message: '页面加载于 ' + new Date().toLocaleString(),
+                seen: true
+            }
+        })
+        var app4 = new Vue({
+            el: '#apptest',
+            data: {
+                msg: "This is a b c string .",
+                message: "",
+                checkedNames: [],
+                todos: [
+                { text: '学习 JavaScript' },
+                { text: '学习 Vue' },
+                { text: '整个牛项目' }
+                ]
+            },
+            created: function () {
+                // `this` 指向 vm 实例
+                console.log('msg is: ' + this.msg)
+            },
+            methods: {
+                reverseMessage: function () {
+                this.msg = this.msg.split('').reverse().join('')
+                }
+            }
+        })
+    </script>
+</html>

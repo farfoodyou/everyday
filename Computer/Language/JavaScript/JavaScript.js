@@ -57,3 +57,6 @@ course.begin = function begin(){
 
 course.name;
 course.begin();
+
+// ps: debug
+console.log('Debug：' + course.name);

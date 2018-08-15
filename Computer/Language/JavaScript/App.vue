@@ -7,7 +7,6 @@
 
 <script>
 import hello from './hello.vue'
-
 export default {
 	components: {
 		hello

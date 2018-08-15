@@ -1,4 +1,7 @@
-
+/*
+*  Created at 2018/08/14
+*
+*/
 // 1. strings
 var str1 = "It's six o'clock.";
 var str2 = 'Rememver to say "please" and "thank you".';

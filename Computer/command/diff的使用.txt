@@ -5,11 +5,11 @@ diff -u f1 f2
 diff -Naur old new > my.patch
 patch -p0 < my.patch
 
-ßÀ»òÐíÔÚlinuxÏÂÕâÐ©Óï¾äÓ¦¸ÃÊÇ¿ÉÒÔÓÃµÄ°É¡£
-ÔÚubuntuÏÂ¹ûÈ»Ê±¿ÉÒÔÓÃµÄ£¬
-µ«ÊÇÔÚgit bash for windowÀïÃæÊ±²»¿ÉÒÔÓÃµÄ¡£
+å‘ƒæˆ–è®¸åœ¨linuxä¸‹è¿™äº›è¯­å¥åº”è¯¥æ˜¯å¯ä»¥ç”¨çš„å§ã€‚
+åœ¨ubuntuä¸‹æžœç„¶æ—¶å¯ä»¥ç”¨çš„ï¼Œ
+ä½†æ˜¯åœ¨git bash for windowé‡Œé¢æ—¶ä¸å¯ä»¥ç”¨çš„ã€‚
 
 
-linux diffÏê½â-andersonyan-ChinaUnix²©¿Í: http://blog.chinaunix.net/uid-26000296-id-3507646.html
+linux diffè¯¦è§£-andersonyan-ChinaUnixåšå®¢: http://blog.chinaunix.net/uid-26000296-id-3507646.html
 
 

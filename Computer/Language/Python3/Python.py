@@ -55,5 +55,14 @@ print('a' not in b)
 # 4. 循环
 
 # 5. 函数
-
+def functionname( parameters ):
+   "函数_文档字符串"
+   print("xx");
+   return 1;
 # 6. 对象
+
+# 7. 
+
+import time
+t = time.time()
+dt = time.strftime("%Y%m%d%H%M%S", time.localtime(t))

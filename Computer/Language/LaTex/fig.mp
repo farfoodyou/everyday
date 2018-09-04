@@ -4,6 +4,10 @@ he:=7;                    % height in units u
 hoehe:=he*u;              % height
 breite:=wi*u;             % width
 
+prologues:=3;
+outputformat:="svg";
+outputtemplate:="%j-%c.%o";
+
 path p[];
   p0:=fullcircle scaled  3u shifted (2.3u, hoehe-2.1u);
   p1:=fullcircle xscaled 3u yscaled u rotated 225 shifted (2.3u, 1.6u);

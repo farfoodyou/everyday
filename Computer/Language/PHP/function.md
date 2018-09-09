@@ -25,3 +25,13 @@ in
 `array_slice()` 返回数组的切片
 
 
+##### is_array()
+
+##### strpos()
+
+##### explode()
+
+##### array_splice()
+
+##### in_array()
+

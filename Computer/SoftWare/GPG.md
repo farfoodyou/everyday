@@ -7,7 +7,7 @@ gpg --list-keys
 
 ## encode decode
 gpg -r huyalyu -e README.md
-gpg -o rm.de.md -d README.md.gpg
+gpg -o README.de.md -d README.md.gpg
 ## sign
 gpg --sign demo.txt
 gpg --clearsign demo.txt

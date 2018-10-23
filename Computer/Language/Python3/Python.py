@@ -56,9 +56,9 @@ print('a' not in b)
 
 # 5. 函数
 def functionname( parameters ):
-   "函数_文档字符串"
-   print("xx");
-   return 1;
+    "函数_文档字符串"
+    print("xx")
+    return 1
 # 6. 对象
 
 # 7. 

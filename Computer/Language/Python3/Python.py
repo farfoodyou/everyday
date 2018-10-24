@@ -14,21 +14,21 @@ print(number3)
 print(string2)
 
 # 2. 列表、元组、集合、字典
-list1 = ['Google', 'Runoob', 1997, 2000];
-list2 = [1, 2, 3, 4, 5 ];
-list3 = ["a", "b", "c", "d"];
+list1 = ['Google', 'Runoob', 1997, 2000]
+list2 = [1, 2, 3, 4, 5 ]
+list3 = ["a", "b", "c", "d"]
 print ("list1[0]: ", list1[0])
 print ("list2[1:5]: ", list2[1:5])
 print ("原始列表 : ", list2)
 del list2[2]
 print ("删除第三个元素 : ", list2)
     
-tup1 = ('Google', 'Runoob', 1997, 2000);
-tup2 = "a", "b", "c", "d";
+tup1 = ('Google', 'Runoob', 1997, 2000)
+tup2 = "a", "b", "c", "d"
 print ("tup1[0]: ", tup1[0])
 print ("tup2[1:5]: ", tup2[1:5])
     #元组不允许修改
-tup3 = tup1 + tup2;
+tup3 = tup1 + tup2
 print (tup3)
 
 dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'}

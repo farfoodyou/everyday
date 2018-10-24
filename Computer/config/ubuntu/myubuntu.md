@@ -21,7 +21,7 @@
 terminal下
 1. 用python配置有道翻译API，实现终端翻译
 // 我兴奋地快要睡不着了，原来终端还可以这么使用
-![youdao](/images/demo/youdao.png)
+![youdao](/assets/images/demo/youdao.png)
 
 2. sox   
 命令行音乐播放器，如果要编写按照crontab计划播放提示音的话用这个比较合适。  

@@ -1,7 +1,7 @@
 # atom issue
 
 ### Description
-![issue](/images/issue/editor_crashed.png)
+![issue](/assets/images/issue/editor_crashed.png)
 
 没错莫名其妙就错误了，然后我还关不掉。
 我在终端里，top查看了一下pid然后kill掉。

@@ -10,8 +10,6 @@ Shameless
 《巴黎伦敦落魄记》
 《打工女孩》
 
-杨舒平演讲风波
-
 ### 天价学费
 读书可能让人更穷
 ### 底层反智主义盛行
@@ -37,3 +35,15 @@ https://www.zhihu.com/question/29507966/answer/91330828
 paypal还有一个白人vp卧轨，然后paypal极尽哀荣，各种纪念慰问赔偿，对这位华人工程师就不闻不问了,毕竟是白人社会。
 ## 其他
 2016大选，两党互相诋毁
+
+[美国34个州90个城市爆发严重骚乱,美国内人权问题紧迫（组图）](https://link.zhihu.com/?target=http%3A//www.wyzxwk.com/Article/guoji/2014/11/333195.html)
+
+[美国芝加哥继续发生游行示威抗议黑人青年被枪杀-新华网](https://link.zhihu.com/?target=http%3A//www.xinhuanet.com/world/2015-11/28/c_1117288735.htm)
+
+[美国密尔沃基爆发黑人骚乱 数百名非裔上街抗议](https://link.zhihu.com/?target=http%3A//news.163.com/16/0815/05/BUG4GIHB00014JB6.html)
+
+[美国黑人男子被打死引发骚乱 国民警卫队进驻平乱(图)](https://link.zhihu.com/?target=http%3A//news.ifeng.com/a/20140819/41629504_0.shtml)
+
+[黑人青年“非正常”死亡 美国民众抗议升级骚乱](https://link.zhihu.com/?target=http%3A//news.sohu.com/20150428/n412019815.shtml)
+
+[黑人骚乱，美国永远的痛(图)](https://link.zhihu.com/?target=http%3A//news.sina.com.cn/w/sd/2014-12-04/160131246033.shtml)

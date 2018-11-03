@@ -51,9 +51,21 @@ print('a' in b)
 print('a' not in b) 
 
 # 3. 分支
+boolean = True
+isin = 2000 in list1 
+# in 是区别类型的 
+# '2000' in list1 = False 
+#  2000 in list1 = True
+if (boolean):
+    pass
+else:
+    pass
 
 # 4. 循环
-
+for value in list1:
+    print(value)
+for k,v in enumerate(list1):
+    print(k,v)
 # 5. 函数
 def functionname( parameters ):
     "函数_文档字符串"
@@ -66,3 +78,4 @@ def functionname( parameters ):
 import time
 t = time.time()
 dt = time.strftime("%Y%m%d%H%M%S", time.localtime(t))
+

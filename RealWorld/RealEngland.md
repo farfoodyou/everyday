@@ -1,4 +1,8 @@
 [toc]
+
+## 事件
+[Chef, 24, 'beat his Chinese student girlfriend to death'](https://www.dailymail.co.uk/news/article-4211208/Chef-24-beat-Chinese-student-girlfriend-death.html)
+
 ## 危险的Chav
 2011年全英国暴动-2011年 8月伦敦骚乱
 http://news.163.com/special/reviews/lriot.html

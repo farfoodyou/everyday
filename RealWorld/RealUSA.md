@@ -36,6 +36,8 @@ paypal还有一个白人vp卧轨，然后paypal极尽哀荣，各种纪念慰问
 ## 其他
 2016大选，两党互相诋毁
 
+平等从来不是天上掉下来的:
+
 [美国34个州90个城市爆发严重骚乱,美国内人权问题紧迫（组图）](https://link.zhihu.com/?target=http%3A//www.wyzxwk.com/Article/guoji/2014/11/333195.html)
 
 [美国芝加哥继续发生游行示威抗议黑人青年被枪杀-新华网](https://link.zhihu.com/?target=http%3A//www.xinhuanet.com/world/2015-11/28/c_1117288735.htm)

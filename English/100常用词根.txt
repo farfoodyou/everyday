@@ -10,7 +10,7 @@ aug,auct,auth
 bi,bio
 cad,cas,cid
 cap,capt,cept
-ced,deed,cess
+ced,ceed,cess
 centr
 cern,cret
 cid,cis

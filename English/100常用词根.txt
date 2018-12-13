@@ -30,7 +30,7 @@ duc,duct
 equ
 fac,fact,fect
 fer
-fic
+fid
 fin
 flu,flux
 form

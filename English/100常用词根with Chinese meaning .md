@@ -1,4 +1,4 @@
-﻿# 英语词根
+﻿# 最常见的 100 个英语词根
 
 1. ag,act = to do,to drive 做,驱使
 2. am,amat = to love 爱

@@ -3,3 +3,6 @@ export
 node_modules
 
 *.gz
+
+*.exe
+*.o

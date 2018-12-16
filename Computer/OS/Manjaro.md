@@ -77,3 +77,4 @@ staged 里面没有的文件才能add,
 这个flow 好像feature完成之后直接合入dev分支了
 连merge信息都没有
 有个选项好像能合并所有的commit成一个?
+如果不选保留分之会被删除么?

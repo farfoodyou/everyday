@@ -77,11 +77,11 @@ staged 里面没有的文件才能add,
 这个flow 好像feature完成之后直接合入dev分支了
 连merge信息都没有
 
-
+ 
 有个squash选项好像能合并所有的commit成一个?
 如果不选保留分之会被删除么? 
 
 感觉还是vscode大法好用, 不过flow也有它的价值吧
 如果选择了保留分支就不是merge,而是dev沿着feature快速前进了
 这样的话, 还是有merge信息好一些
-  
+   

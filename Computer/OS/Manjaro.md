@@ -81,5 +81,5 @@ staged 里面没有的文件才能add,
 有个squash选项好像能合并所有的commit成一个?
 如果不选保留分之会被删除么? 
 
-感觉还是vscode大法好用
+感觉还是vscode大法好用, 不过flow也有它的价值吧
  

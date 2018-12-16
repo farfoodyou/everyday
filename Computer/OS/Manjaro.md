@@ -84,4 +84,4 @@ staged 里面没有的文件才能add,
 感觉还是vscode大法好用, 不过flow也有它的价值吧
 如果选择了保留分支就不是merge,而是dev沿着feature快速前进了
 这样的话, 还是有merge信息好一些
- 
+  

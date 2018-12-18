@@ -20,4 +20,3 @@ drop database dbname
 CREATE DATABASE IF NOT EXISTS swpdb DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
 
 
-2018-12-18: 我记得当时这个搞了好几天才成功

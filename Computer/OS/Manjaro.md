@@ -18,6 +18,8 @@ giteye
 smartgit
 proxychains
 eclipse-cpp
+qemu
+
 ### eclipse-cpp
 :: There are 6 providers available for eclipse:
 :: Repository community

@@ -5,9 +5,8 @@ docker exec -it 775c7c9ee1e1 /bin/bash
 构建本地镜像
 docker build -t h/moinmoin-wiki .
 
-
+删除镜像
 docker image inspect --format='{{.RepoTags}} {{.Id}} {{.Parent}}' $(docker image ls -q --filter since=xxxxxx)
-
 docker rmi $(docker images -q) -f
 
 ##### ACLS

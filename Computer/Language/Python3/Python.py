@@ -27,7 +27,7 @@ tup1 = ('Google', 'Runoob', 1997, 2000)
 tup2 = "a", "b", "c", "d"
 print ("tup1[0]: ", tup1[0])
 print ("tup2[1:5]: ", tup2[1:5])
-    #元组不允许修改
+#元组不允许修改
 tup3 = tup1 + tup2
 print (tup3)
 
@@ -73,9 +73,17 @@ def functionname( parameters ):
     return 1
 # 6. 对象
 
-# 7. 
-
+# 7. exec
+## time
 import time
 t = time.time()
 dt = time.strftime("%Y%m%d%H%M%S", time.localtime(t))
 
+## exec
+import os
+os.system('ls -l')
+
+result = os.popen('ps aux')
+res = result.read()
+for line in res.splitlines():
+    print line

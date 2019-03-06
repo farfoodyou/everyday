@@ -1,12 +1,14 @@
-Ê×ÏÈ£¬Çå³ıËùÓĞµÄkey-pair
+é¦–å…ˆï¼Œæ¸…é™¤æ‰€æœ‰çš„key-pair
 ssh-add -D
 rm -r ~/.ssh
-É¾³ıÄãÔÚgithubÖĞµÄpublic-key
+åˆ é™¤ä½ åœ¨githubä¸­çš„public-key
 
-ÖØĞÂÉú³ÉsshÃÜÔ¿¶Ô
+é‡æ–°ç”Ÿæˆsshå¯†é’¥å¯¹
 ssh-keygen -t rsa -C "xxx@xxx.com"
 chmod 0700 ~/.ssh
 chmod 0600 ~/.ssh/id_rsa*
+
+git config --global user.email "your_email@example.com"
 
 
 git init

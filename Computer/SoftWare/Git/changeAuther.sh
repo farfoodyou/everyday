@@ -23,3 +23,7 @@ export GIT_AUTHOR_EMAIL="$am"
 export GIT_COMMITTER_NAME="$cn"
 export GIT_COMMITTER_EMAIL="$cm"
 '
+
+# 确认无误后，提交至版本库（切记，下面的操作将不可逆）
+# git push origin --force --all
+# git push origin --force --tags

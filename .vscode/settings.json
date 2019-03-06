@@ -3,7 +3,7 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    // "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
     "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.view.pdf.external.command": {
         "command": "displayfile",

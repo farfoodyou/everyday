@@ -7,5 +7,8 @@ node_modules
 *.exe
 *.o
 /.project
+<<<<<<< HEAD
 
 Test
+=======
+>>>>>>> 1dd1ed80814face0295f03e8a785ed672a0ffafa

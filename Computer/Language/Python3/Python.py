@@ -79,6 +79,9 @@ import time
 t = time.time()
 dt = time.strftime("%Y%m%d%H%M%S", time.localtime(t))
 
+import datetime
+(datetime.datetime.now() + datetime.timedelta(days=1)).strftime("%Y/%m/%d %H:%M:%S")
+
 ## exec
 import os
 os.system('ls -l')

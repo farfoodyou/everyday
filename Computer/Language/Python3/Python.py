@@ -101,3 +101,11 @@ JsonStr = json.dumps(o)
 print(JsonStr)
 oB = json.loads(JsonStr)
 print(oB)
+
+## requests
+import requests
+r = requests.put('http://httpbin.org/put', data = {'key':'value'})
+r = requests.delete('http://httpbin.org/delete')
+r = requests.head('http://httpbin.org/get')
+r = requests.options('http://httpbin.org/get')
+

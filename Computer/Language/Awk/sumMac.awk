@@ -1,16 +1,18 @@
 #!/usr/bin/env awk  -f
 #运行前
 BEGIN {
-    FS="(title:|startTime:|endTime:)"
+    FS="(Task:|[()]|to)"
     sum = 0
     num = 0
     printf "  NO.   TIME        TITLE \n"
     printf "---------------------------------------------\n"
 }
 #运行中
-/^####/{
-    "date -j -f '%Y-%m-%d %H:%M:%S' "$4" '+%s'"|getline endTime;
-    "date -j -f '%Y-%m-%d %H:%M:%S' "$3" '+%s'"|getline startTime;
+/^##### T/{
+    gsub(/^[ \t]+/,"",$3);gsub(/[ \t]+$/,"",$3)
+    gsub(/^[ \t]+/,"",$4);gsub(/[ \t]+$/,"",$4)
+    "date -j -f '%Y-%m-%d %H:%M:%S' '"$4"' '+%s'"|getline endTime;
+    "date -j -f '%Y-%m-%d %H:%M:%S' '"$3"' '+%s'"|getline startTime;
     delta = (endTime-startTime)/60 + 1
     sum += delta
     num += 1

@@ -87,3 +87,14 @@ result = os.popen('ps aux')
 res = result.read()
 for line in res.splitlines():
     print line
+
+## Json
+import json
+o = {}
+o['name'] = 'testObject'
+o['key'] = 'value'
+o['list'] = [2,3,4,5]
+JsonStr = json.dumps(o)
+print(JsonStr)
+oB = json.loads(JsonStr)
+print(oB)

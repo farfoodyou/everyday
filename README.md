@@ -47,3 +47,8 @@ int main(){
 ###### ps:数学公式不会写可以参考：
 
 http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+
+###### 脚本:
+
+统计时间:`Computer/Language/Awk/sum.awk`
+计算前五天:`Computer/Language/Shell/which_day_to_memorize.sh`

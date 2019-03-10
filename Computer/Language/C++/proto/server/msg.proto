@@ -1,0 +1,6 @@
+
+syntax = "proto2";
+
+message EchoMsg{
+   required string msg = 1;
+}

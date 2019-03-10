@@ -85,4 +85,7 @@
           ]
         }
     ],
+    "files.associations": {
+      "*.inc": "cpp"
+    },
 }

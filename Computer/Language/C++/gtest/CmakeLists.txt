@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_CXX_STANDARD 11)
+set(HEADER_FILES_PATH
+./test
+./include
+)
+project(main)
+
+INCLUDE_DIRECTORIES(${HEADER_FILES_PATH})
+
+find_package(GTEST REQUIRED)
+#file(GLOB SOURCE "src/*.cc")
+aux_source_directory(./src SRC_LIST)
+
+ADD_library(model ${SRC_LIST})
+add_executable(${PROJECT_NAME} ./main.cpp)
+add_executable(gtest ./test/main.cpp)
+
+target_link_libraries(${PROJECT_NAME} ${GTEST_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} model)
+target_link_libraries(gtest ${GTEST_LIBRARIES})
+target_link_libraries(gtest model)

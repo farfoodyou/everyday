@@ -43,16 +43,15 @@ constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors
 constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_msg_2eproto = nullptr;
 
 const ::google::protobuf::uint32 TableStruct_msg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::EchoMsg, _has_bits_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::EchoMsg, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::EchoMsg, msg_),
-  0,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::EchoMsg)},
+  { 0, -1, sizeof(::EchoMsg)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -66,12 +65,13 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 };
 
 const char descriptor_table_protodef_msg_2eproto[] =
-  "\n\tmsg.proto\"\026\n\007EchoMsg\022\013\n\003msg\030\001 \002(\t"
+  "\n\tmsg.proto\"\026\n\007EchoMsg\022\013\n\003msg\030\001 \001(\tb\006pro"
+  "to3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_msg_2eproto = {
   false, InitDefaults_msg_2eproto, 
   descriptor_table_protodef_msg_2eproto,
-  "msg.proto", &assign_descriptors_table_msg_2eproto, 35,
+  "msg.proto", &assign_descriptors_table_msg_2eproto, 43,
 };
 
 void AddDescriptors_msg_2eproto() {
@@ -90,9 +90,6 @@ void EchoMsg::InitAsDefaultInstance() {
 }
 class EchoMsg::HasBitSetters {
  public:
-  static void set_has_msg(EchoMsg* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
-  }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -106,11 +103,10 @@ EchoMsg::EchoMsg()
 }
 EchoMsg::EchoMsg(const EchoMsg& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(nullptr),
-      _has_bits_(from._has_bits_) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_msg()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   // @@protoc_insertion_point(copy_constructor:EchoMsg)
@@ -146,11 +142,7 @@ void EchoMsg::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    msg_.ClearNonDefaultToEmptyNoArena();
-  }
-  _has_bits_.Clear();
+  msg_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _internal_metadata_.Clear();
 }
 
@@ -167,7 +159,7 @@ const char* EchoMsg::_InternalParse(const char* begin, const char* end, void* ob
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // required string msg = 1;
+      // string msg = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -175,10 +167,10 @@ const char* EchoMsg::_InternalParse(const char* begin, const char* end, void* ob
         ctx->extra_parse_data().SetFieldName("EchoMsg.msg");
         object = msg->mutable_msg();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
           goto string_till_end;
         }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
         ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
         ptr += size;
         break;
@@ -217,15 +209,15 @@ bool EchoMsg::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required string msg = 1;
+      // string msg = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_msg()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->msg().data(), static_cast<int>(this->msg().length()),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "EchoMsg.msg");
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "EchoMsg.msg"));
         } else {
           goto handle_unusual;
         }
@@ -259,12 +251,11 @@ void EchoMsg::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  // required string msg = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+  // string msg = 1;
+  if (this->msg().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->msg().data(), static_cast<int>(this->msg().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
       "EchoMsg.msg");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->msg(), output);
@@ -283,12 +274,11 @@ void EchoMsg::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  // required string msg = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+  // string msg = 1;
+  if (this->msg().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->msg().data(), static_cast<int>(this->msg().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
       "EchoMsg.msg");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
@@ -312,15 +302,16 @@ size_t EchoMsg::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  // required string msg = 1;
-  if (has_msg()) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string msg = 1;
+  if (this->msg().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->msg());
   }
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -349,8 +340,8 @@ void EchoMsg::MergeFrom(const EchoMsg& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_msg()) {
-    _has_bits_[0] |= 0x00000001u;
+  if (from.msg().size() > 0) {
+
     msg_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
 }
@@ -370,7 +361,6 @@ void EchoMsg::CopyFrom(const EchoMsg& from) {
 }
 
 bool EchoMsg::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
@@ -381,7 +371,6 @@ void EchoMsg::Swap(EchoMsg* other) {
 void EchoMsg::InternalSwap(EchoMsg* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   msg_.Swap(&other->msg_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
 }

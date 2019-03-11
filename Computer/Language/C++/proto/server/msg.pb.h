@@ -86,13 +86,6 @@ class EchoMsg final :
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
   static const ::google::protobuf::Descriptor* descriptor() {
     return default_instance().GetDescriptor();
   }
@@ -161,8 +154,7 @@ class EchoMsg final :
 
   // accessors -------------------------------------------------------
 
-  // required string msg = 1;
-  bool has_msg() const;
+  // string msg = 1;
   void clear_msg();
   static const int kMsgFieldNumber = 1;
   const ::std::string& msg() const;
@@ -181,9 +173,8 @@ class EchoMsg final :
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr msg_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_msg_2eproto;
 };
 // ===================================================================
@@ -197,26 +188,22 @@ class EchoMsg final :
 #endif  // __GNUC__
 // EchoMsg
 
-// required string msg = 1;
-inline bool EchoMsg::has_msg() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
+// string msg = 1;
 inline void EchoMsg::clear_msg() {
   msg_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
 }
 inline const ::std::string& EchoMsg::msg() const {
   // @@protoc_insertion_point(field_get:EchoMsg.msg)
   return msg_.GetNoArena();
 }
 inline void EchoMsg::set_msg(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
+  
   msg_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:EchoMsg.msg)
 }
 #if LANG_CXX11
 inline void EchoMsg::set_msg(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
+  
   msg_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:EchoMsg.msg)
@@ -224,34 +211,31 @@ inline void EchoMsg::set_msg(::std::string&& value) {
 #endif
 inline void EchoMsg::set_msg(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
+  
   msg_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:EchoMsg.msg)
 }
 inline void EchoMsg::set_msg(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
+  
   msg_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:EchoMsg.msg)
 }
 inline ::std::string* EchoMsg::mutable_msg() {
-  _has_bits_[0] |= 0x00000001u;
+  
   // @@protoc_insertion_point(field_mutable:EchoMsg.msg)
   return msg_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* EchoMsg::release_msg() {
   // @@protoc_insertion_point(field_release:EchoMsg.msg)
-  if (!has_msg()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return msg_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  
+  return msg_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void EchoMsg::set_allocated_msg(::std::string* msg) {
   if (msg != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
+    
   } else {
-    _has_bits_[0] &= ~0x00000001u;
+    
   }
   msg_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), msg);
   // @@protoc_insertion_point(field_set_allocated:EchoMsg.msg)

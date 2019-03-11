@@ -1,6 +1,6 @@
 
-syntax = "proto2";
+syntax = "proto3";
 
 message EchoMsg{
-   required string msg = 1;
+    string msg = 1;
 }

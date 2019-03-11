@@ -11,3 +11,5 @@ node_modules
 Test
 
 build
+# python 运行缓存
+__pycache__

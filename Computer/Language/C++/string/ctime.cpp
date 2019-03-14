@@ -48,9 +48,9 @@ int test4(){
     return 0;
 }
 int test5(){
-    printf("\033[47;31mThis is a color test.\n\033[0m");
-    printf("\033[40;31mThis is a color test.\n\033[0m");
-    printf("\033[40;32mThis is a color test.\n\033[0m");
+    printf("\033[47;31mThis is a color test.\n\033[0m\n");
+    printf("\033[40;31mThis is a color test.\n\033[0m\n");
+    printf("\033[40;32mThis is a color test.\n\033[0m\n");
     return 0;
 }
 int main(){

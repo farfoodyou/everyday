@@ -1,0 +1,6 @@
+
+##### 压缩
+`brew install p7zip`
+
+##### 程序库
+`brew install boost`

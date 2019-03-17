@@ -3,7 +3,8 @@ export
 node_modules
 
 *.gz
-
+a.out
+a.out*
 *.exe
 *.o
 /.project

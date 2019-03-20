@@ -148,4 +148,5 @@
       "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
+    "icoding.enabled": true,
 }

@@ -1,5 +1,7 @@
 
-视频下载:
+
+下载:
+    axel
     Annie
 
 编辑工具:
@@ -19,6 +21,7 @@ Wiki软件:
 
 状态管理:
     dstat
+    htop
 
 文件/空间管理:
     ranger
@@ -36,6 +39,11 @@ web服务器:
     apache
     Nginx
 
+网络浏览:
+    w3m
+    curl
+    httpie
+
 存储:
     MySQL
     MongoDB
@@ -43,14 +51,24 @@ web服务器:
 压缩软件:
     p7zip
 
+音频软件:
+    ffmpeg
+    NetEase-MusicBox
+
+绘图:
+    graphviz+dot
+
 shell系列:
-    jq
+    nc
     shellcheck
     pbcopy
     cloc
     thefuck
     figlet
     tldr
+    bsdgames
+
+数据操作 jq
 
 c++库:
     rapidjson

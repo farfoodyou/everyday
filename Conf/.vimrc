@@ -10,5 +10,4 @@ syntax on               " 开启语法高亮
 
 set noswapfile
 
-
 " 这些基础的配置就够用了.

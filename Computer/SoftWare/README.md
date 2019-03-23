@@ -83,6 +83,7 @@ web服务器:
 
 加密解密:
     GPG
+	KeePass
 
 绘图:
     graphviz+dot
@@ -99,7 +100,9 @@ shell系列:
     figlet
     tldr
     bsdgames
-
+    ccache
+    highlight
+    
 数据操作 jq
 
 ## Library

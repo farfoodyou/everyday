@@ -9,6 +9,9 @@ ranger - visual file manager
 ranger的配置与使用 | yinflying的个人网站
 http://yinflying.top/2017/04/414
 
+linux终端文件管理器ranger使用详解
+http://www.mikewootc.com/wiki/linux/usage/ranger_file_manager.html
+
 Video Previews · ranger/ranger Wiki
 https://github.com/ranger/ranger/wiki/Video-Previews
 

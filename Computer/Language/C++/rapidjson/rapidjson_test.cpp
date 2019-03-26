@@ -44,5 +44,15 @@ int main(){
     assert(doc["hello"].IsString());
     printf("hello = %s\n", doc["hello"].GetString());
     printf("z = %s\n", doc["z"]["x"].GetString());
+
+    std::string json2("[\"xx\",\"eee\"]");
+    Document doc2;
+
+    if (doc2.Parse(json2.c_str()).HasParseError() || !doc2.IsArray()){
+        printf("json2 err");
+        return 1;
+    }
+    printf("doc2 1= %s\n", doc2[1].GetString());
+
     return 0;
 }

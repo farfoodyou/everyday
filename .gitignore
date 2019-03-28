@@ -1,16 +1,23 @@
 export
 
+# other modules
 node_modules
 
+# compress bag
 *.gz
+
+# output
 a.out
 a.out*
 *.exe
 *.o
 /.project
-.dSYM
+*.dSYM
 Test
+test
 
 build
+
 # python 运行缓存
 __pycache__
+*.pyc

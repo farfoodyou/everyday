@@ -21,3 +21,7 @@ build
 # python 运行缓存
 __pycache__
 *.pyc
+
+#vscode
+.ipch
+ipch

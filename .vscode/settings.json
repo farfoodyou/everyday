@@ -152,7 +152,8 @@
       "list": "cpp",
       "optional": "cpp",
       "typeindex": "cpp",
-      "variant": "cpp"
+      "variant": "cpp",
+      "fstream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "icoding.enabled": true,

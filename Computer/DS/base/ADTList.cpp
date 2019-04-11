@@ -17,25 +17,15 @@ typedef struct ADTList{
         root = (Node *)malloc(sizeof(Node));
         root->next=NULL;
         root->v.v = 0;
-        printf("init over\n");
     }
     void DestroyList(){
-        int len = 0;
-
-        // 初始化有关的知识, 初始化不是在函数调用的时候才初始化的么?
+        // 初始化有关的知识, 初始化不是在函数调用的时候才初始化的么? 不是这个情况.
         // Node *p,*q = root;  我怎么能写出这么蠢的写法
         Node *p,*q;
         p = q = root;
-        printf("====[ Destroy ]====\n");
-        printf("%p\n",p);
-        printf("%p\n",root);
         root = NULL;
         while(p->next != NULL){
-            printf("%d\n",len);
-            
-            len++;
             q = p->next; 
-            printf("%d\n",p->v.v);
             free(p);
             p = q;
         }
@@ -63,10 +53,8 @@ typedef struct ADTList{
         Node *p = root;
         while(p->next != NULL){
             printf("%d\n",p->v.v);
-            printf("%p\n",p);
             p = p->next;
         }
-        printf("%p\n",p);
         printf("%d\n",p->v.v);
     }
     int IsEmpty(){
@@ -102,6 +90,8 @@ int main(){
     std::cout << list.ListLength() << std::endl;
     std::cout << "node tail"<< std::endl;
 
+    // 
+    [](int v)->int{printf("lambda %d\n",v);return 0;}(8899);
 
     v.v = 567;
     list.ListInsert(v);

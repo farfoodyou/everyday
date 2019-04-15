@@ -2,6 +2,7 @@
 # This script is tool can add project, commit stage, push project.
 # start of script
 
+git status
 git add ./
 date_str=`date`
 if [ $# == 1 ];then

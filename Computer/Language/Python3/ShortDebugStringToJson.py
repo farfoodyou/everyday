@@ -3,9 +3,11 @@
 import json
 
 '''
-这个文件用来转化 proto ShortDebugString 产生的结果为 json string
 作者:
 日期:20190416
+说明: 这个文件用来转化 proto ShortDebugString 产生的结果为 json string
+惭愧啊, 这里的算法只有大二水平, 我确调了4个小时, 才完成.
+真是拳不离手, 曲不离口, 不练不行啊, 冰冻三尺非一日之寒
 '''
 
 str = 'rec_input {rec_type: "211" rec_param { rec_id: "211" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "212" rec_param { rec_id: "212" rec_num: 3 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } }'
@@ -68,10 +70,20 @@ def toJson(begin,end):
         return str[begin:end].strip(' ')
     return keyst
 
+Edict = {
+    'GAME_PAGE_TYPE_HOME':0,
+    'GAME_PAGE_TYPE_MORE':1,
+    'RAC_RANK_TYPE_COMMON':0, 
+    'RAC_DISPLAY_TYPE_GAME_BIG_PHOTO':1,
+    'RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO':2,
+    'RAC_DISPLAY_TYPE_COMMON':0,
+    'RAC_RANK_TYPE_FOLLOW':1,
+    'RAC_RANK_TYPE_RANKING':2
+}
 
-
-dict = {'RAC_RANK_TYPE_COMMON':0}
 def Travese(json):
+    global Edict
+    #print(Edict)
     if(type(json).__name__=='dict'):
         for item in json:
             if(type(json[item]).__name__=='dict' or type(json[item]).__name__=='list'):
@@ -80,6 +92,9 @@ def Travese(json):
                 json[item] = json[item].strip('"')
             elif(json[item].isdigit()):
                 json[item] = int(json[item])
+            elif(json[item] in Edict):
+                #print(item,json[item])
+                json[item] = Edict[json[item]]
     else:
         for item,v in enumerate(json):
             if(type(json[item]).__name__=='dict' or type(json[item]).__name__=='list'):
@@ -88,6 +103,9 @@ def Travese(json):
                 json[item] = json[item].strip('"')
             elif(json[item].isdigit()):
                 json[item] = int(json[item])
+            elif(json[item] in Edict):
+                #print(item,json[item])
+                json[item] = Edict[json[item]]
 
 res = toJson(0,len(str))
 Travese(res)

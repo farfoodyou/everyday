@@ -8,6 +8,7 @@ import json
 说明: 这个文件用来转化 proto ShortDebugString 产生的结果为 json string
 惭愧啊, 这里的算法只有大二水平, 我确调了4个小时, 才完成.
 真是拳不离手, 曲不离口, 不练不行啊, 冰冻三尺非一日之寒
+这份代码暴露出了太多问题了, 
 '''
 
 str = 'rec_input {rec_type: "211" rec_param { rec_id: "211" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "212" rec_param { rec_id: "212" rec_num: 3 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } }'

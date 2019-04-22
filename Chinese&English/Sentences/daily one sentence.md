@@ -87,3 +87,18 @@ excessive speculation 过度投资
 asset price 资产价格
 burst 破裂
 
+### 49 -- 60
+
+61: We usually think laughter is primarily something we do when we find something funny, but in fact most laughter is produced for social reasons - we are 30 times more likely to laugh if there is someone else with us than when we are on our own.
+conveentional wisdom 传统看法
+laughter 笑
+
+62: The District plans to crack down on drivers who park in or block bike lanes and put cyclists at risk by creating a team of bike-lane enforcement officers with the power to issue tickets on the scene and by mail.
+
+crack down on 严惩,整治
+park 停车
+block 阻塞
+cyclist 汽车人
+enforcement officers 执法人员
+issue tickets 开罚单
+

@@ -87,7 +87,24 @@ excessive speculation 过度投资
 asset price 资产价格
 burst 破裂
 
-### 49 -- 60
+### 49 -- 59
+59: What grabs fewer headlines is that there are plenty of behaviors that require self-control that have held steady or event improved in recent decades. Cigarette somking has fallen sharply since the Mad Men days. Alcohol consumption peaked in 1980 and has fallen back to the same level as 1960.
+grab
+plenty of 
+self-control
+Mad Men
+peak
+hold steady
+
+60: Supporting homeless people to achieve their potential matters now more than ever. For this vulnerable group , with complex needs aggravated by barriers to basic services such as housing, health, employment and benefits, attending university is low on the list of aspirations.Yet for many, a university education will help them get their lives fully on track, enabling them to find fulfilling work and a regular income.
+potential
+matter
+vulnerable group
+aggravate
+barrier
+aspiration
+fulfilling work
+regular income
 
 61: We usually think laughter is primarily something we do when we find something funny, but in fact most laughter is produced for social reasons - we are 30 times more likely to laugh if there is someone else with us than when we are on our own.
 conveentional wisdom 传统看法
@@ -101,4 +118,11 @@ block 阻塞
 cyclist 汽车人
 enforcement officers 执法人员
 issue tickets 开罚单
+
+63: Disappointingly,journalism is falling behind other sectors of elitism such as law and banking, which are doing more to compendsate glaring inequalities.
+Disappoingtingly
+journalism
+elitism
+glaring
+inequalities
 

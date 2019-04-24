@@ -87,7 +87,9 @@ excessive speculation 过度投资
 asset price 资产价格
 burst 破裂
 
-### 49 -- 59
+### 49 -- 58
+
+
 59: What grabs fewer headlines is that there are plenty of behaviors that require self-control that have held steady or event improved in recent decades. Cigarette somking has fallen sharply since the Mad Men days. Alcohol consumption peaked in 1980 and has fallen back to the same level as 1960.
 grab
 plenty of 
@@ -126,3 +128,13 @@ elitism
 glaring
 inequalities
 
+64: German prosecutors charged former Volkswagen CEO Martin Winterkorn and four others with fraud in the emissins cheating scandal that has helped turn many Europeans against diesel engines and accelerated the push toward electric cars.
+
+prosecutors 检察官
+Volkswagen 
+fraud 造假
+emission 排放
+diesel engines 柴油机
+push 发展
+turn A aginst B 使A反对B
+charge A with B 质控A犯下B的罪行

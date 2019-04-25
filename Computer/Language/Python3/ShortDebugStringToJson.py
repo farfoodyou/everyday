@@ -8,7 +8,7 @@ import json
 说明: 这个文件用来转化 proto ShortDebugString 产生的结果为 json string
 '''
 
-str = 'rec_input {rec_type: "211" rec_param { rec_id: "211" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "212" rec_param { rec_id: "212" rec_num: 3 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "213" rec_param { rec_id: "213" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "214" rec_param { rec_id: "214" rec_num: 0 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_COMMON page: 1 } } rec_input { rec_type: "215" rec_param { rec_id: "215" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "216" rec_param { rec_id: "216" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "218" rec_param { rec_id: "218" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input{ rec_type: "219" rec_param { rec_id: "219" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "220" rec_param { rec_id: "220" rec_num: 0 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_COMMON page: 1 } } rec_input { rec_type: "221" rec_param { rec_id: "221" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "299" rec_param { rec_id: "299" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "226" rec_param { rec_id: "226" rec_num: 0 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_COMMON page: 1 } } rec_input { rec_type: "228" rec_param { rec_id: "228" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "229" rec_param { rec_id: "229" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "230" rec_param { rec_id: "230" rec_num: 1 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_BIG_PHOTO page: 1 } } rec_input { rec_type: "231" rec_param { rec_id: "231" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "232" rec_param { rec_id: "232" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "233" rec_param { rec_id: "233" rec_num: 1 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_BIG_PHOTO page: 1 } } rec_input { rec_type: "234" rec_param { rec_id: "234" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "235" rec_param { rec_id: "235"rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "236" rec_param { rec_id: "236" rec_num: 1 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_BIG_PHOTO page: 1 } } rec_input { rec_type: "237" rec_param { rec_id: "237" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } rec_input { rec_type: "238" rec_param { rec_id: "238" rec_num: 4 rank_type: RAC_RANK_TYPE_COMMON display_type: RAC_DISPLAY_TYPE_GAME_SMALL_PHOTO page: 1 } } history_disp { type: "bsp_history_7d" } rec_ctx { system_type: "android" system_version: "6.0" province: "" city: "" district: "" city_code: "" shoubai_version: "11.6.1.10" shoubai_type: "baidu" refer: "" page: 1 size: 50 channel: "baidu" mini_swan_version: "2.3.0" } ext_param { page_type: GAME_PAGE_TYPE_HOME }'
+str = 'rec_input { rec_type: "POS_PERSONAL_ANDROID" rec_param { rec_id: "POS_PERSONAL_ANDROID" rec_num: 7 } } history_disp { type: "bsp_history_7d" } history_disp { type: "bsp_history_1d" } rec_ctx { system_type: "android" system_version: "9" length: 2137 width: 1080 province: "" city: "" shoubai_version: "11.7.0.10" shoubai_type: "" device_model: "JSN-AL00a" device_vendor: "HUAWEI" user_ip: "10.159.36.160" }'
 
 # [begin,end)
 def toJson(begin,end):
@@ -102,7 +102,12 @@ def Travese(json):
             elif(json[item] in Edict):
                 #print(item,json[item])
                 json[item] = Edict[json[item]]
+def solve(input_str):
+    global str
+    str = input_str
+    res = toJson(0,len(str))
+    Travese(res)
+    print(json.dumps(res))
 
-res = toJson(0,len(str))
-Travese(res)
-print(json.dumps(res))
+z='z { x: 3 } z { x:4 }'
+solve(z)

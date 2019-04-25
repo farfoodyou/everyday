@@ -3,20 +3,26 @@
 import json
 
 '''
-作者:
+作者:farfood@qq.com
 日期:20190416
 说明: 这个文件用来转化 proto ShortDebugString 产生的结果为 json string
+请直接调用solve函数
+注意事项1: 如果有枚举, 可能需要修改 Edict 字典
+注意事项2: 如果如果确定某一key是list,在solve中修改res即可
+
+基本原理: 
+1. 读取 str 中的 key { substr } 和 key: value 两种,如果 key 已存在,转化成列表. 
+2. 递归地转化 substr
 '''
 
 str = 'rec_input { rec_type: "POS_PERSONAL_ANDROID" rec_param { rec_id: "POS_PERSONAL_ANDROID" rec_num: 7 } } history_disp { type: "bsp_history_7d" } history_disp { type: "bsp_history_1d" } rec_ctx { system_type: "android" system_version: "9" length: 2137 width: 1080 province: "" city: "" shoubai_version: "11.7.0.10" shoubai_type: "" device_model: "JSN-AL00a" device_vendor: "HUAWEI" user_ip: "10.159.36.160" }'
 
-# [begin,end)
+# 对全局变量str 进行转化, 转化范围是 [begin,end)
 def toJson(begin,end):
     p = begin
     lastp = begin
     keyst = {}
     while(p < end):
-        
         if (str[p]==':'):
             key = str[lastp:p]
             key = key.strip(' ')
@@ -65,7 +71,7 @@ def toJson(begin,end):
     if(len(keyst)==0):
         return str[begin:end].strip(' ')
     return keyst
-
+# 如果是枚举可能需要修改这个字典
 Edict = {
     'GAME_PAGE_TYPE_HOME':0,
     'GAME_PAGE_TYPE_MORE':1,
@@ -104,10 +110,12 @@ def Travese(json):
                 json[item] = Edict[json[item]]
 def solve(input_str):
     global str
-    str = input_str
+    str = input_str + '  '
     res = toJson(0,len(str))
     Travese(res)
-    print(json.dumps(res))
+    output_str = json.dumps(res)
+    print(output_str)
+    return output_str
 
-z='z { x: 3 } z { x:4 }'
+z='z { x: 3 } z { x:4 } x: 34'
 solve(z)

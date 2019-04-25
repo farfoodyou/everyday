@@ -138,3 +138,11 @@ diesel engines 柴油机
 push 发展
 turn A aginst B 使A反对B
 charge A with B 质控A犯下B的罪行
+
+65: However, Spence said the research might help to unpick some of the unexplained phenomena around taste, pointing out that previous experiments have found people could still discriminate between foods that are only expected to differ by their odours, even when their nose was not involved.
+
+Odours=odors 只是拼法不一样, 都是气味
+unpick 解密, 解释
+unexplained 不可解释的
+phenomena 现象(复数)
+differ 区分

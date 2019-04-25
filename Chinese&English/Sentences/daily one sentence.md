@@ -146,3 +146,13 @@ unpick 解密, 解释
 unexplained 不可解释的
 phenomena 现象(复数)
 differ 区分
+
+66: Zuckerberg also expressed confidence that the company could "strengthen privacy without meaningfully impacting our business", though the chief financial officer, David Wehner,warned that the company expects revenue growth rates to "decelerate sequentially" due to "adtargeting-related headwinds"
+strengthen privacy 加强隐私保护
+meaningfully 实质性地
+impact 影响
+expect 预期
+revenue growth rates 收入增长率
+decelerate 减缓
+sequentially 按顺序
+ad-targeting 目标广告

@@ -87,8 +87,22 @@ excessive speculation 过度投资
 asset price 资产价格
 burst 破裂
 
-### 49 -- 58
+49: Executives of these companies are fully aware that consumers are nervous, and that a security breach could be a company-ending event.The app companies quoted in this artical say they never sell user data, don't allow advertisers to use data for targeting, and keep the data securely encrypted..
+executives 管理者们
+be fully aware 充分意识到
+a security breach 安全破坏事件
+securely encrypted 安全加密
+targeting 目标营销
+company-ending 使公司终结
 
+50: Economists debate the reasons behind the so-called "productivity puzzle" Some believe gains from new digital technologies are not being captured by the figures,while others argue that a decade of government austerity and soft business investment austerity and soft business investment are taking their toll.
+capture 反应,体现
+figures 数据
+government austerity 政府紧缩的经济政策
+soft business investment 疲软的商业投资
+take one's toll 产生破坏效果
+
+### 51 -- 58
 
 59: What grabs fewer headlines is that there are plenty of behaviors that require self-control that have held steady or event improved in recent decades. Cigarette somking has fallen sharply since the Mad Men days. Alcohol consumption peaked in 1980 and has fallen back to the same level as 1960.
 grab

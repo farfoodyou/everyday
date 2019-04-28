@@ -75,7 +75,7 @@ web服务器:
 压缩软件:
     p7zip
     tar
-
+    xz
 音频/视频软件:
     VLC
     ffmpeg

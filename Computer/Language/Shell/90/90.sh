@@ -9,7 +9,7 @@ for i in `seq -w 0 23`; do  grep -e 'call relation service failed, ErrorCode='  
 
 perl -ne 'if(/bsp_game, T_TOTAL, \d+, (\d+), \d+/){print "$1\n"}'  fork.log.2019042720 > /tmp/total;
 cd /tmp;
-rawfile='ps_cost';file='tmp';
+rawfile='28';file='tmp';
 sort -n -r $rawfile > $file;
 total=$(wc -l /tmp/$file |awk '{print int($1)}'); 
 num99=`echo "${total}/100" | bc`;

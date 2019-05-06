@@ -2,6 +2,18 @@
 #include <cstdlib>
 #include <iostream>
 
+
+/*
+ * Node表示节点, Value表示值
+ * InitList 初始化
+ * ListLength 返回长度
+ * Head 获取链表头节点
+ * Tail 获取链表尾节点
+ * PrintList 打印链表
+ * IsEmpty 判断是否为空
+ * ListInsert 插入节点
+ * 
+ */
 typedef struct Value{
     int v;
 }Value;

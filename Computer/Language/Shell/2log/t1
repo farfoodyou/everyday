@@ -1,0 +1,5 @@
+-rw-r--r--  1 root root       10 2011-12-18 11:45 adjtime
+drwxr-xr-x  2 root root     4096 2011-12-18 11:51 libreoffice
+drwxr-xr-x  2 root root     4096 2011-12-18 11:52 dictionaries-common
+-rw-r--r--  1 root root      350 2011-12-18 11:52 popularity-contest.conf
+-rw-r--r--  1 work work      350 2011-12-18 11:52 d-contest.conf

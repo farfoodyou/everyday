@@ -4,3 +4,8 @@
 join -1 1 -2 1 log1 log2
 
 import sqlite3
+
+
+q "select * from t1 t join emails e on (t.c3 == e.c1)" 
+
+q "select * from t1 t left join emails e on (t.c3 == e.c1)" 

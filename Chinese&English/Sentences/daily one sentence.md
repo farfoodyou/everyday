@@ -170,3 +170,27 @@ revenue growth rates 收入增长率
 decelerate 减缓
 sequentially 按顺序
 ad-targeting 目标广告
+
+2019-05-07
+67: Trump has treatened to lead another shutdown after the September dealine if his funding priorities aren't met. They include an additional increase in military spending, more money to construct a wall on the Mexico border, and big budget cuts for things like housing, education, environmental protection and froeign these priorites, creating a possible deadlock because they control the House of Representatives.
+
+68: The uneasy relationship between dentist and patient is further complicated by an unfortnate reality: Common dental procedures are not always as safe, effective, or durable as we are meant to believe. As a profession, dentistry has not yet applied the same level of self-scrutiny as medicine, or embraced as sweeping an emphasis on scientific evidence.
+
+69: The gun rights group, which spent $31 million to help elect President Trump during the 2016 presidential campaign, has been operating in the red ever since, according to financial records. Despite having a Supreme Court that now tips toward Second Amendment rights, a Republican president and, until November, a Republican-controlled Congress, the organization has not been able to push forward much of tis agends in Washington.
+
+70: Balancing the benefits more humanlike AI could bring with risk for abuse is a rottured task from a practical point of view. From a more human one, however, it can be hard not to hope the tide of technological change will roll in slowly. Those hidden meanings, mystifying relationships and even groan-worthy puns that stump machines are what make Shakespeare Shakespeare. They're also what make us us.
+
+71: President Donald Trump's 2020 budget proposal argues that the benefit is not only complicated for borrowers to navigate, but it also inefficiently targets subsidies only to those borrowers in public service jobs. Senate Democrates believe that Congress should maintain but repair and improve the Public Service Loan Forgiveness program fo it is easier to understand and operate, and better targeted at occupations taxpayers actually want to subsidize with their generosity.
+
+72: But everybody knows Obama needs a liberal to stop the court from moving further to the right than it already has under John Roberts, the present chief justice, a man more stealth-bomber than aircraft-carrier, whose professions of judicial modesty during his own confirmation hearing in 2005 gave little inkling of the controversial decisions over which he has since presided.
+
+73: The Federal Reserve left interest rares unchanged on Wednesday, defying a push from President Trump for lower rates intended to stimulate the economy. "it appears that risks have moderated somewhat" Federal Reserve Chair Jerome H.Powell said Wednnesday, pointing to improving global growth and financial market conditions and optimism about trade tensions easing.
+
+74: Left, until now, to odd, low-level IT staff to put right, and seen as a concern only of data-rich industries such as banking, telecoms and air travel, information protection is now high on the boss's agenda in businesses of every variety.
+
+75: As the economy continues to grow past what many predicted was possible , some analysts and officials are wondering if the current state of the economy is too good to be true -- and that experts must be missing warning signs.
+
+76: Rarely has the search for new knowledge, undertaken by a university of world renown,been so vocally condemned. That is what happended when Cambridge University announced a new academic research project to determine the extent to which the university "contributed to , benefited from or challendged" slavery and the slave trade.
+
+77: The law,which is set to come into effect from 1 March 2022 if it passes through parliament before the end of this year, wouldmake vaccination against measles mandatory for all children attending nurseries and schools, as well as teachers, educators and medicals staff at hospitals and surgeries.
+

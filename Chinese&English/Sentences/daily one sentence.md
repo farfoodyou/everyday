@@ -194,3 +194,9 @@ ad-targeting 目标广告
 
 77: The law,which is set to come into effect from 1 March 2022 if it passes through parliament before the end of this year, wouldmake vaccination against measles mandatory for all children attending nurseries and schools, as well as teachers, educators and medicals staff at hospitals and surgeries.
 
+78:
+The law would make vaccination against measles mandatory for all children attending nurseries and schools, as well as teachers,educators and medical staff at hospitals and surgeries.
+
+which is set to come into effect from 1 March 2022 if it passes through parliament before the end of this year.
+
+

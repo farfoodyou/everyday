@@ -2,7 +2,6 @@
 #include <cstdlib>
 #include <iostream>
 
-
 /*
  * Node表示节点, Value表示值
  * InitList 初始化
@@ -102,7 +101,7 @@ int main(){
     std::cout << list.ListLength() << std::endl;
     std::cout << "node tail"<< std::endl;
 
-    // 
+    // lambada 测试
     [](int v)->int{printf("lambda %d\n",v);return 0;}(8899);
 
     v.v = 567;

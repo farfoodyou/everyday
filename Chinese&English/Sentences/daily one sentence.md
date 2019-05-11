@@ -199,4 +199,16 @@ The law would make vaccination against measles mandatory for all children attend
 
 which is set to come into effect from 1 March 2022 if it passes through parliament before the end of this year.
 
+79: Worldwide, there aere more than 50 fatal airline accidents a year through the early and mid-1990s, claiming well over 1000 lives annually, according to figures compiled by the Flight Safely Foundation.
+
+1 claim 导致死亡
+2 compile 收集
+3 figures 数据
+4 Worldwide 世界范围来看
+
+80: To some, this imbalance in the gender makeup of the press corps makes media coverage prone to framing articles from a male perspective. For example, in evaluating a female candidate's qualifications, they look for someone who is strong, rational, composed, and a fighter, says Meredith Conroy. "Women can try to distort themselves into this mold, but it's harder," Conroy continues, "Men are inherentlym more suitable for this vision of the presidency, so their male behaviors are less likely to be questioned by the press."
+
+81: You might have hoped, in view of the European Union's failures, that Brexit would provide an opportunity to do things better. It does not being taken. On the contrary, while the EU will introduce a legal commitment to prevent any fish species from being exploited beyond its replacement rate next year, the UK's fisheres bill contains no such safeguard.
+
+82: 
 

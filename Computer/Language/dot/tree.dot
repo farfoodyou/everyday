@@ -1,0 +1,25 @@
+digraph g {
+  node[shape=record,height=.1]; //定义了下面的node样式
+
+  node0[label="<f0> |<f1> A|<f2> "]; //我是一个node, 我有三个属性, 第二个属性名字为A, 其他两个为空
+  node1[label="<f0> |<f1> B|<f2> "];
+  node2[label="<f0> |<f1> C|<f2> "];
+  node3[label="<f0> |<f1> D|<f2> "];
+  node4[label="<f0> |<f1> E|<f2> "];
+  node5[label="<f0> |<f1> F|<f2> "];
+  node6[label="<f0> |<f1> H|<f2> "];
+  node7[label="<f0> |<f1> I|<f2> "];
+  node8[label="<f0> |<f1> J|<f2> "];
+  node9[label="<f0> |<f1> K|<f2> "];
+
+  "node0":f2 -> "node1": f1; //node0的第三个属性连到node1的第二个属性
+  "node1":f0 -> "node2": f1;
+  "node1":f1 -> "node3": f2;
+  "node3":f0 -> "node4": f0;
+  "node3":f1 -> "node5": f1;
+  "node3":f2 -> "node6": f2;
+  "node6":f1 -> "node7": f1;
+  "node7":f1 -> "node8": f0;
+  "node2":f2 -> "node9": f1;
+}
+

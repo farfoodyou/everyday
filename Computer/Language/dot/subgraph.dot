@@ -1,0 +1,29 @@
+digraph g {
+    //定义一个子图, subgraph定义子图
+    subgraph cluster0 {
+        node[style=filled, color=white];  //定义子图中的节点的样式
+        style=filled; //定义子图的样式
+        color=red; //定义子图的填充色
+        a0->a1->a2->a3; //定义节点, 及节点之间的关系
+        label="process #1"; //定义子图的标签
+     }
+
+   //又定义一个子图
+   subgraph cluster1 {
+      node[style=filled, color=white];
+      style=filled;
+      color=blue; //定义子图的填充色
+      b0->b1->b2->b3; //定义节点及其关系
+      label="process #2";
+      labelColor=white;
+   }
+
+    //定义子图之间的关系
+    start->a0;
+    start->b0;
+    a1->b3;
+    b2->a3;
+    a3->end;
+    b3->end;
+}
+

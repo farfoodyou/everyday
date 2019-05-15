@@ -210,5 +210,28 @@ which is set to come into effect from 1 March 2022 if it passes through parliame
 
 81: You might have hoped, in view of the European Union's failures, that Brexit would provide an opportunity to do things better. It does not being taken. On the contrary, while the EU will introduce a legal commitment to prevent any fish species from being exploited beyond its replacement rate next year, the UK's fisheres bill contains no such safeguard.
 
-82: 
+82: Von Hernandez said the deal is "a crucialfirst step towards topping the use of developing countries as a dumping groundfor the world's plastic waste, especially those coming from rich nations". MarcoLambertini said the accord is a welcome step and that for too long wealthycountries have abdicated responsibility for enormous quantities of plasticwaste. "However, it only goes part of the way. What we - and the planet = needis a comprehensive treaty to tackle the global plastic crisis," Lambertiniadded.
+dumping ground 垃圾场
+the accord = the deal 协议
+a welcome step 受欢迎的一步
+abdicate = abandon 放弃
+comprehensive 综合性的
+tackle=address 解决,应对
+treaty = package 方案
+
+83: The exams regulator in England, Ofqual, is "Killing off" modern languages by failling to address the excessive difficulty of language GCSE and A-level exams, according to more than 150 academics. In a letter published in the Guardian, the 152 academics warn that the exams are graded too severely and the stress for pupils is " disproportionate". "They will have to sit excessively difficult exams and accept that their grade may well end up lower than their performance deserves," the letter says.
+
+address 应对
+academics 科研人员
+severe 严格
+disproportionate 不成比例的
+grade 评分
+may well 很有可能
+end up 以...结束
+sit exams 参加考试
+excessively difficult 非常困难
+
+84:
+
+85: In an era when social media is central to much human interaction, and a phone can bring the whole world into our palms, the idea that what happens on the internet is somehow "less real" feels like it's missing the point.
 

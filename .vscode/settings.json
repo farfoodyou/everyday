@@ -145,7 +145,15 @@
       "unordered_map": "cpp",
       "unordered_set": "cpp",
       "utility": "cpp",
-      "vector": "cpp"
+      "vector": "cpp",
+      "array": "cpp",
+      "complex": "cpp",
+      "deque": "cpp",
+      "list": "cpp",
+      "optional": "cpp",
+      "typeindex": "cpp",
+      "variant": "cpp",
+      "fstream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "icoding.enabled": true,

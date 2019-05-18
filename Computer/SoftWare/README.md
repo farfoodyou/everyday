@@ -60,22 +60,26 @@ web服务器:
     apache
     Nginx
 
-网络浏览:
+网络访问:
     w3m
     curl
     httpie
-文本预览:
+
+文本预览:       //感觉没太大用处
     poppler
     pdftoppm
 
 存储:
     MySQL
+    reids
     MongoDB
+    spark
+    hadoop
 
 压缩软件:
-    p7zip
-    tar
-
+    p7zip       较高压缩率
+    tar         常用打包工具
+    xz          高压率软件
 音频/视频软件:
     VLC
     ffmpeg
@@ -112,3 +116,7 @@ c++库:
 
 手册:
     cppman
+
+## cli
+
+	leetcode-cli

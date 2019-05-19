@@ -29,7 +29,6 @@ qemu
 export http_proxy=socks5h://localhost:1080
 export https_proxy=socks5h://localhost:1080
 
-
 ### 命令
 screenfetch
 不仅可以展示logo，还能显示一些基本的硬件信息
@@ -56,8 +55,6 @@ $ pip install --upgrade genpac
 ```
 genpac -p "SOCKS5 127.0.0.1:1080" --output="autoproxy.pac"
 
-
-
 ### giteye
 感觉感应速度有些有些慢, 还得手动刷新的话
 那我还不如直接用VScode来得痛快
@@ -79,7 +76,6 @@ staged 里面没有的文件才能add,
 这个flow 好像feature完成之后直接合入dev分支了
 连merge信息都没有
 
- 
 有个squash选项好像能合并所有的commit成一个?
 如果不选保留分之会被删除么? 
 

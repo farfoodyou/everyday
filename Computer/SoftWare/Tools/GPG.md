@@ -21,9 +21,8 @@ gpg --armor --output private-key.txt --export-secret-keys
 
 gpg --import [密钥文件]
 
-## 
+## pub_key
 gpg --send-keys [用户ID] --keyserver hkp://subkeys.pgp.net
 gpg --fingerprint [用户ID]
 
 gpg --keyserver hkp://subkeys.pgp.net --search-keys [用户ID]
-

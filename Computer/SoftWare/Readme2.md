@@ -1,5 +1,4 @@
 
-
 Shell: bash。它结合了 csh 和 ksh 的优点，并且有 readline 功能，你可以随意绑定自己的键盘。
 
 编辑器： VIM, Emacs。

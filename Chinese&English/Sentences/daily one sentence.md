@@ -4,6 +4,7 @@ end up sth/doing sth = end up with sth/doing std 以xxx结束
 taxpayer funding 纳税人的钱
 avoidable 可避免的
 prescriptions 处方
+
 40: The vanishing of coal plants from the American landscape began years ago, but it has persisted under President Trump, who came into office promising to revitalize the coal industry.
 Coal plants are booming with the help of president's promise to revialize the coal industry?
 vanish 消失
@@ -14,6 +15,7 @@ coal Industry 煤炭工业
 come into office 上台执政
 persist 持续存在
 under Persident Trump 再特朗普总统治下
+
 41: There are benefis to low-wage worker of hiking the minimum, but also dangers -- most prominently, a heightened risk that employers will cut jobs and hours, or substitute machinery for labor.
 Q: The low wage is an advantage of human labor over machinery.
 low-wage workers 低工资工人
@@ -22,6 +24,7 @@ the minimum 最低工资
 prominent 明显和首先的
 heightened 增加的 = increased
 substitue A for B  用 A 代替 B
+
 42: With just a year to go before the 2020 Census, the U.S. government is urgently working to safeguard against hacking and disinformation campaigns as it perfects a plan to count about 330 million people largely online for the first time.
 The hacking is making the plan to count people online for the first time perfect.
 Census 人口普查
@@ -29,6 +32,7 @@ urgently 紧急地
 hacking 黑客
 disinformatin campaigns 虚假信息宣传活动
 perfect 完善
+
 43: Details of the plans are sketchy but it appears Apple will be launching a new platform for news publishers with paywalls - the Wall Street Journal is in, New York Times and Washington Post are not - and announcing a series of new TV deals and original programmes that will put is head to head with Netflix, Amarzon, Hulu and their rivals in streaming meida as they fight it out to be the new kings of Hollywoods.
 with paywalls 比喻需要付费
 launch 发起
@@ -231,7 +235,8 @@ end up 以...结束
 sit exams 参加考试
 excessively difficult 非常困难
 
-84:
+84: 
 
 85: In an era when social media is central to much human interaction, and a phone can bring the whole world into our palms, the idea that what happens on the internet is somehow "less real" feels like it's missing the point.
 
+86: 

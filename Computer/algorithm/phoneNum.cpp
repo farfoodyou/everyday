@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 int tag[10] = {0}, sum = 0, used = 0;
 int uable[10][10];

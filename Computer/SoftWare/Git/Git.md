@@ -21,3 +21,5 @@ git config user.email "Author Email"
 确认无误后，提交至版本库（切记，下面的操作将不可逆）
 git push origin --force --all
 git push origin --force --tags
+
+#### git pull / merge / fetch

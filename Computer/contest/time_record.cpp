@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>  // 这个头文件再mac里得自己下载,挺麻烦的.
 using namespace std;
 int main() {
 #ifndef ONLINE_JUDGE

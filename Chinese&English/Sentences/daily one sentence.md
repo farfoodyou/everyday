@@ -240,3 +240,5 @@ excessively difficult 非常困难
 85: In an era when social media is central to much human interaction, and a phone can bring the whole world into our palms, the idea that what happens on the internet is somehow "less real" feels like it's missing the point.
 
 86: 
+
+看懂一遍比直接抄一遍有用. 看懂一遍抄一遍比只看一遍有用.

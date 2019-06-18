@@ -33,9 +33,10 @@ int main() {
     pause_thread(3);
     std::chrono::duration<double, std::milli> elapsed = end-start;
     std::cout << "Waited " << elapsed.count() << " ms\n";
-
+    pthread_t handler = t1->native_handle();
+    t1->detach();
     //t1->join();
-    delete t1;
+    //delete t1;
     //t1.join();
     return 0;
 }

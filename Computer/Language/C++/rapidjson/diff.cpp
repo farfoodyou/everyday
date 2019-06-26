@@ -21,59 +21,16 @@ public:
     };
 };
 
-bool diff_json(rapidjson::Value& a,rapidjson::Value& b);
-bool diff_value(rapidjson::Value& a,rapidjson::Value& b);
+bool diff_json(const rapidjson::Value& a,const rapidjson::Value& b);
+bool diff_value(const rapidjson::Value& a,const rapidjson::Value& b);
 
-bool cout_node(rapidjson::Value& a);
+bool cout_node(const rapidjson::Value& a);
 
 int main(){
 
-    std::string json1("{\"hello\":\"world\",\"t\":true,\"f\":false,\"n\":null,\"i\":123,\"pi\":3.1416,\"a\":[1,2,3,4]}");
-    rapidjson::Document doc1;
-
-    if (doc1.Parse(json1.c_str()).HasParseError())
-        return 1;
-
-    assert(doc1.HasMember("hello"));
-    assert(doc1["hello"].IsString());
-    printf("hello 1= %s\n", doc1["hello"].GetString());
-    //printf("z 1  = %s\n", doc1["z"]["x"].GetString());
-
-    std::string json("{\"hello\":\"wo3333rld\",\"t\":true,\"f\":false,\"n\":null,\"i\":123,\"pi\":3.1416,\"a\":[1,2,3,4],\"z\":{\"x\":\"xx\"}}");
-    rapidjson::Document doc;
-
-    if (doc.Parse(json.c_str()).HasParseError())
-        return 1;
-
-    assert(doc.HasMember("hello"));
-    assert(doc["hello"].IsString());
-    printf("hello = %s\n", doc["hello"].GetString());
-    printf("z = %s\n", doc["z"]["x"].GetString());
-
-    std::string json2("[\"xx\",\"eee\"]");
-    rapidjson::Document doc2;
-
-    if (doc2.Parse(json2.c_str()).HasParseError() || !doc2.IsArray()){
-        printf("json2 err");
-        return 1;
-    }
-    printf("doc2 1= %s\n", doc2[1].GetString());
-
-    vector<int> vec;
-    vec.push_back(10);
-    vec.push_back(1);
-    vec.push_back(13);
-    sort(vec.begin(),vec.end());
-    sort(vec.begin(),vec.end(),[](int& a, int& b)->bool{
-        return b < a;
-    });
-    for(vector<int>::iterator it = vec.begin(); it != vec.end(); it++){
-        cout << *it<< endl;
-    }
-
     // 开始 json 递归检查是否相同
-    std::string diff_json_1("{\"hello\":\"wo3333rld\",\"t\":true,\"f\":false,\"n\":null,\"i\":123,\"pi\":3.1416,\"a\":[1,2,3,{\"s\":33},[33,34,54]],\"z\":{\"x\":\"xx\"}}");
-    std::string diff_json_2("{\"hello\":\"wo3333rld\",\"t\":true,\"f\":false,\"n\":null,\"i\":123,\"pi\":3.1416,\"a\":[1,2,3,{\"s\":33},[33,34,54]],\"z\":{\"x\":\"xx\"}}");
+    std::string diff_json_1("{\"hello\":\"wo3333rld\",\"t\":true,\"f\":false,\"n\":null,\"i\":123,\"pi\":-3.3,\"a\":[1,2,3,{\"s\":33},[33,34,54]],\"z\":{\"x\":\"xx\"}}");
+    std::string diff_json_2("{\"hello\":\"wo3333rld\",\"t\":true,\"f\":false,\"n\":null,\"i\":123,\"pi\":-3,\"a\":[1,2,3,{\"s\":33},[33,34,54]],\"z\":{\"x\":\"xx\"}}");
     rapidjson::Document diff_doc_1;
     rapidjson::Document diff_doc_2;
     diff_doc_1.Parse(diff_json_1.c_str());
@@ -83,6 +40,7 @@ int main(){
     } else {
         cout << " diff " << endl;
     }
+    cout << " pi is " << diff_doc_1["pi"].GetDouble() << endl;
     cout << " ================================= " << endl;
     diff_json(diff_doc_1, diff_doc_2);
 
@@ -91,7 +49,14 @@ int main(){
 
 static const char* kTypeNames[] = 
     { "Null", "False", "True", "Object", "Array", "String", "Number" };
-bool diff_json(rapidjson::Value& base_object, rapidjson::Value& diff_object) {
+bool diff_json(const rapidjson::Value& base_object,const  rapidjson::Value& diff_object) {
+    if (!base_object.IsObject()) {
+        cout << " " << endl;
+        cout_node(base_object);
+        cout_node(base_object);
+        return false;
+    }
+
     if (base_object.MemberCount() != diff_object.MemberCount()) {
         cout << " diff size " << endl;
     }
@@ -101,6 +66,8 @@ bool diff_json(rapidjson::Value& base_object, rapidjson::Value& diff_object) {
         itr != base_object.MemberEnd() && diff_itr != diff_object.MemberEnd(); 
         ++itr, ++diff_itr)
     {
+        printf("Type of member %s is %s\n",itr->name.GetString(), kTypeNames[itr->value.GetType()]);
+        printf("Type of member %s is %s\n",diff_itr->name.GetString(), kTypeNames[diff_itr->value.GetType()]);
         std::string base_name(itr->name.GetString());
         std::string diff_name(diff_itr->name.GetString());
         if(base_name != diff_name || itr->value.GetType() != diff_itr->value.GetType()) {
@@ -116,7 +83,8 @@ bool diff_json(rapidjson::Value& base_object, rapidjson::Value& diff_object) {
                 if (itr->value.Size() == diff_itr->value.Size()) {
                     for (rapidjson::SizeType i = 0; i < itr->value.Size(); i++) {
                         cout << i << " value= " << endl;
-                        diff_value(itr->value[i], diff_itr->value[i]);
+                        //cout_node(itr->value[i]);
+                        diff_json(itr->value[i], diff_itr->value[i]);
                     }
                 } else {
                     cout << "array size not equal" << endl;
@@ -145,7 +113,7 @@ bool diff_json(rapidjson::Value& base_object, rapidjson::Value& diff_object) {
     }
     return true;
 }
-bool diff_value(rapidjson::Value& base_value, rapidjson::Value& diff_value) {
+bool diff_value(const rapidjson::Value& base_value,const rapidjson::Value& diff_value) {
 
     if(base_value.GetType() != diff_value.GetType()) {
         printf("Type of member %d \n",base_value.GetType());
@@ -194,7 +162,7 @@ bool diff_value(rapidjson::Value& base_value, rapidjson::Value& diff_value) {
     
 }
 
-bool cout_node(rapidjson::Value& base_value) {
+bool cout_node(const rapidjson::Value& base_value) {
     cout << " ------------ " << endl;
     switch(base_value.GetType()) {
         case rapidjson::Type::kObjectType: 
@@ -225,8 +193,23 @@ bool cout_node(rapidjson::Value& base_value) {
             break;
     }
 }
-// 通用 json diff 工具
+// 通用 json diff 库
     //sort(base_document.MemberBegin(), base_document.MemberEnd(), [&](Value& a, Value& b)->bool{
     //    return a.name.GetString() < b.name.GetString();
     //});
     //sort(base_document.MemberBegin(), base_document.MemberEnd());
+
+/*
+ * 本来打算直接用 json 作为对比两棵树
+ * 但是还是用 proto 来进行, 可能速度上差不多
+ * 哭了.... 哪天熬夜写了啥, 在于自己坑自己啊.
+ * 拿不出手, 拿不出手, 一年了, 结果还是这样.
+ * 
+ */
+
+/* 
+ * 正确性, 完整性, 鲁棒性的高质量代码.
+ * 自信的原点, 现在我已经掌握了更加先进的学习方法了.
+ * 题海战术? 例子学习, 大量训练. 对抗遗忘? 顺应遗忘, 强化记忆
+ * 
+ **/

@@ -10,4 +10,3 @@ void shellSort(int *arr, int len){
         }
     }
 }
-

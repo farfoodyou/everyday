@@ -64,6 +64,3 @@ int main(){
     printf("the locaton is %d\n", nums[result3]);
     return 0;
 }
-
-
-

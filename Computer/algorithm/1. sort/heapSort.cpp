@@ -1,3 +1,5 @@
+
+//最小堆, 堆顶是最小值
 void HeapSort(int *arr, int len){
     int i;
     for(i = len / 2 - 1; i >= 0; --i){
@@ -16,9 +18,9 @@ void Heapify(int *arr, int first, int last){
     int father = first;
     int son = father * 2 + 1;
     while(son < last){
-        if(son + 1 < last && arr[son] < arr[son + 1]) ++son;
+        if(son + 1 < last && arr[son] < arr[son + 1]) ++son;  //如果右儿子大就选择右儿子
 
-        if(arr[father] > arr[son])break;
+        if(arr[father] > arr[son])break; // 
         else{
             int temp = arr[father];
             arr[father] = arr[son];

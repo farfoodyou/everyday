@@ -1,6 +1,0 @@
-
-syntax = "proto3";
-
-message EchoMsg{
-    string msg = 1;
-}

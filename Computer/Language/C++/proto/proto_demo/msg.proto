@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+
+message EchoMsg{
+    string msg = 1;
+    repeated string tuple = 2;
+    repeated Body body = 3;
+}
+
+message Body {
+    repeated string tuple = 1;
+}

@@ -28,3 +28,6 @@ ipch
 
 # tmp file
 *tmp*
+
+# proto
+*.gch

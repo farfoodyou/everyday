@@ -156,7 +156,10 @@
       "fstream": "cpp",
       "queue": "cpp",
       "stack": "cpp",
-      "thread": "cpp"
+      "thread": "cpp",
+      "numeric": "cpp",
+      "random": "cpp",
+      "*.tcc": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "icoding.enabled": true,

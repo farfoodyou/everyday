@@ -163,4 +163,5 @@
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "icoding.enabled": true,
+    "icoding.relay.username": "work",
 }

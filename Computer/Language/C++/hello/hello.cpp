@@ -2,7 +2,10 @@
 #include <iostream>
 
 enum Color {
-    red, blue, yellow, green
+    red, 
+    blue, 
+    yellow, 
+    green
 };
 
 void print(Color c){
@@ -20,5 +23,6 @@ int main(){
     print(c);
     c = blue;
     print(c);
+
     return 0;
 }

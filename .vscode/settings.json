@@ -159,7 +159,10 @@
       "thread": "cpp",
       "numeric": "cpp",
       "random": "cpp",
-      "*.tcc": "cpp"
+      "*.tcc": "cpp",
+      "clocale": "cpp",
+      "cinttypes": "cpp",
+      "hashtable": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "icoding.enabled": true,

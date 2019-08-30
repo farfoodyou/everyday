@@ -11,13 +11,13 @@ int main(){
 
     std::cout << oss.str() << std::endl;
 
-/* 
+    /* 
     fmt::Writer w;
     w << "KT_" << 538 << ".";
     std::cout << w.str() << std::endl;
-*/
+    */
     fmt::print("Elapsed time: {} seconds", 1.23);
-/* 
+    /* 
     std::ostream os;
     os << "KT_" << 545 << ".";
     std::cout << os.c_str() << std::endl;

@@ -33,8 +33,6 @@ for i= 0, 2 do
    print(array[i])
 end
 
-
-
 -- 4. functions
 function max(num1, num2)
     if (num1 > num2) then

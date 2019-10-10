@@ -1,9 +1,19 @@
+/*
+ * 树节点, 包括了一个值类型, 和指向左右子节点的指针.
+*/
 struct BinaryTreeNode {
     int m_nValue;
     BinaryTreeNode* m_pLeft;
     BinaryTreeNode* m_pRitht;
 }
 
+/*
+ * 输入参数: 先序遍历数组, 中序遍历数组, 数据的长度
+ * 输出参数: 无
+ * 返回结果: 根据输入参数构建好的二叉树
+ * 描述: 通过先序遍历结果和中序遍历结果来重新构建二叉树结构
+ * 
+*/
 BinaryTreeNode* Construct(int* preorder, int* inorder,int length){
     if(preorder == nullptr || inorder==nullptr||length <=0){
         return nullptr;
@@ -12,6 +22,13 @@ BinaryTreeNode* Construct(int* preorder, int* inorder,int length){
         inorder, inorder + length-1);
 }
 
+/*
+ * 输入参数: 先序遍历数组开头, 先序遍历数组结尾, 中序遍历数组开头, 中序遍历数组结尾
+ * 输出参数: 无
+ * 返回结果: 根据输入参数构建好的二叉树
+ * 描述: 通过先序遍历结果和中序遍历结果来重新构建二叉树结构
+ * 
+*/
 BinaryTreeNode* ConstructCore(
     int* startPreorder, int* endPreorder,
     int* startInorder, int* endInorder

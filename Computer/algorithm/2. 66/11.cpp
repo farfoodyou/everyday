@@ -1,4 +1,11 @@
 
+/*
+ * 输入参数: 整数数组, 数组长度
+ * 输出参数: 
+ * 返回结果: 第一个反转的数
+ * 描述: 通过二分的方式找出输出旋转数组的最小元素
+ * 
+*/
 int Min(int* numbers, int length){
     if(numbers ==nullptr || length <= 0){
         throw new std::exception("Invalid parameters");

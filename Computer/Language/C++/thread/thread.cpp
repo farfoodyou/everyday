@@ -38,5 +38,14 @@ int main() {
     //t1->join();
     //delete t1;
     //t1.join();
+
+    auto _thread_framework = new std::thread([&](){
+        //_framework->init("./conf/","fork.conf");
+        std::cout << "thread run start " << std::endl;
+        //_framework->run();
+        std::cout << "thread run end " << std::endl;
+        });
+    _thread_framework->detach();
+    
     return 0;
 }

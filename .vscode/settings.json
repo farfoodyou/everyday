@@ -162,7 +162,9 @@
       "*.tcc": "cpp",
       "clocale": "cpp",
       "cinttypes": "cpp",
-      "hashtable": "cpp"
+      "hashtable": "cpp",
+      "hash_map": "cpp",
+      "rope": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "icoding.enabled": true,

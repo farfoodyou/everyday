@@ -1,3 +1,9 @@
+/*
+ * 输入参数: 数组地址, 数组长度
+ * 输出参数: 一个数组是否含有重复元素
+ * 描述: 不实用辅助数组, 不修改原数组, 通过二分查找找到某一个重复的元素
+ * 
+*/
 int getDUplication(const int*numbers,int length){
     if(numbers ==nullptr || length <=0){
         return -1;

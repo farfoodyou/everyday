@@ -190,8 +190,6 @@ static int GetTokPrecedence(){
     return TokPrec;
 }
 
-
-
 static ExprAST *ParseBinOpRHS(int ExprPrec, ExprAST *LHS){
     while(1){
         int TokPrec = GetTokPrecedence();
@@ -221,8 +219,6 @@ static ExprAST *ParseExpression(){
 
     return ParseBinOpRHS(0, LHS);
 }
-
-
 
 static PrototypeAST *ParsePrototype(){
     if(CurTok != tok_identifier)
@@ -312,7 +308,6 @@ static void MainLoop(){
         }
     }
 }
-
 
 int main(){
     

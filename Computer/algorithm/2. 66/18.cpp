@@ -2,7 +2,15 @@ struct ListNode {
     int m_nValue;
     ListNode* m_pNext;
 }
-
+/*
+ * 题目: 删除链表的节点
+ * 输入参数: 给定单向链表的头指针和一个节点指针, 定义在o1 时间内删除该节点
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 给定单向链表的头指针和一个节点指针, 定义在o1 时间内删除该节点
+ * 例1 输入 1->2->3  2  效果 1->3
+ * 
+*/
 void DeleteNode(ListNode** pListHead, ListNode* pToBeDeleted);
 
 

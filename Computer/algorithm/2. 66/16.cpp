@@ -1,5 +1,12 @@
 // 16.cpp
-
+/*
+ * 题目: 数值的整数次方
+ * 输入参数: 底数, 整数exponent
+ * 输出参数: 
+ * 返回结果: 底数base 的exponent次方
+ * 描述: 用快速幂的方式来计算数值的整数次方
+ * 
+*/
 bool g_InvalidInput = false;
 double Power(double base, int exponent) {
     g_InvalidInput =false;

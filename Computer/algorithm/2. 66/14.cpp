@@ -1,3 +1,10 @@
+/*
+ * 输入参数: 整数n
+ * 输出参数: 
+ * 返回结果: 返回最大乘积
+ * 描述: 剪绳子, 给一根长度为n的绳子, 剪成m段, 它们长度的乘积最大的值是多少?
+ * 
+*/
 int maxProductAfterCutting_solution1(int length) {
     if(length < 2) {
         return 0;

@@ -1,5 +1,5 @@
 
-//最小堆, 堆顶是最小值
+// 从小到大排序, 利用最大堆每次从未排序区取最大值.
 void HeapSort(int *arr, int len){
     int i;
     for(i = len / 2 - 1; i >= 0; --i){
@@ -14,6 +14,7 @@ void HeapSort(int *arr, int len){
     }
 }
 
+//最大堆, 堆顶是最大值
 void Heapify(int *arr, int first, int last){
     int father = first;
     int son = father * 2 + 1;

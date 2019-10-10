@@ -1,3 +1,12 @@
+
+/*
+ * 题目: 正则表达式匹配
+ * 输入参数: 要匹配的字符串, 正则表达式字符串
+ * 输出参数: true 能满足 false 不能满足
+ * 返回结果: 
+ * 描述: 实现一个函数用来匹配包含.和*的正则表达式. 模式中的字符.表示任意一个字符, 而*表示前面可以出现任意次.
+ * 例子1  aaa 同 a.a 和 ab*ac* 是匹配的, 但是和 aa.a 和ab*a 是不同步的
+*/
 bool match(char* str, char* pattern) {
     if(str == nullptr || pattern == nullptr) {
         return false;

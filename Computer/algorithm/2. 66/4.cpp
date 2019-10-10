@@ -1,3 +1,9 @@
+/*
+ * 输入参数: 数组地址, 行数, 列数, 要找的元素
+ * 输出参数: 是否能找到对应元素
+ * 描述: 在一个每行每列相对有序的二维数组中查找对应元素
+ * 
+*/
 bool Find(int *matrix, int rows,int columns,int number){
     bool found = false;
     if(matrix !=nullptr && rows >0 && columns >0){

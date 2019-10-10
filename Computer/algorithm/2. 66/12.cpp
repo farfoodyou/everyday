@@ -1,4 +1,10 @@
-
+/*
+ * 输入参数: 二维字符数组, 行数, 列数, 字符串
+ * 输出参数: 
+ * 返回结果: 是否存在该数组
+ * 描述: 用DFS搜索在一个二维数组中查找是否存在某字符串
+ * 
+*/
 bool hasPath(char* mastrix, int rows, int cols, char* str){
     if(matrix == nullptr || rows < 1 || cols < 1 || str==nullptr) {
         return false;

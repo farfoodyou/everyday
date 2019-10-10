@@ -1,5 +1,11 @@
 
-
+/*
+ * 输入参数: 整数n
+ * 输出参数: 
+ * 返回结果: 第n个斐波那契数
+ * 描述: 用递归的方式求出第n个斐波那契数
+ * 
+*/
 long long Fibonacci(unsigned int n){
     if(n<=0){
         return 0;
@@ -10,6 +16,13 @@ long long Fibonacci(unsigned int n){
     return Fibonacci(n-1) + Fibonacci(n-2);
 }
 
+/*
+ * 输入参数: 整数n
+ * 输出参数: 
+ * 返回结果: 第n个斐波那契数
+ * 描述: 用迭代的方式求出第n个斐波那契数
+ * 
+*/
 long long FIbonacci(unsigned int n){
     int resultp2] = {0, 1};
     if(n<2) {

@@ -1,4 +1,13 @@
-
+/*
+ * 题目: 二叉树的镜像
+ * 输入参数: 二叉树
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 输入一棵二叉树, 返回它的镜像
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void MirrorRecursively(BinaryTreeNode* pNode){
     if(pNode == nullptr){
         return ;

@@ -1,4 +1,13 @@
-
+/*
+ * 题目: 对称的二叉树
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 判断二叉树是否对称
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 bool isSymmetrical(BinaryTreeNode* pRoot){
     return isSymmetrical(pRoot, pRoot);
 }

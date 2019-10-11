@@ -6,7 +6,16 @@ struct BinaryTreeNode
     BinaryTreeNode():m_nValue(0),m_pLeft(NULL),m_pRight(NULL){}
     /* data */
 };
-
+/*
+ * 题目: 二叉树中和为某一值的路径
+ * 输入参数: 二叉树和 某一值
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 二叉树中和为某一值的路径
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void FindPath(BinaryTreeNode* pRoot, int expectedSum){
     if(pRoot == nullptr){
         return ;

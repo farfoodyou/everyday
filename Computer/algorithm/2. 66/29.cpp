@@ -1,3 +1,13 @@
+/*
+ * 题目: 顺时针打印矩阵
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 顺时针打印矩阵
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void PrintMatrixClockwisely(int **numbers, int columns, int rows){
     if(numbers == nullptr || columns <= 0 || rows <= 0){
         return;

@@ -3,7 +3,16 @@ struct ComplexListNode {
     ComplexListNode* m_pNext;
     ComplexListNode* m_pSibling;
 }
-
+/*
+ * 题目: 复制链表的复制
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void CloneNodes(ComplexListNode* pHead){
     ComplexListNode* pNode = pHead;
     while(pNode != nullptr){

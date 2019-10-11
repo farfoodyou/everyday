@@ -1,3 +1,14 @@
+
+/*
+ * 题目: 数据流中的中位数
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 获取数据流中的中位数
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 template<typename T> class DynamicArray{
     public:
     void Insert(T num){

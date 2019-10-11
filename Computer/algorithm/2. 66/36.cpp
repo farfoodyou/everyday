@@ -1,3 +1,14 @@
+
+/*
+ * 题目: 二叉搜索树与双向链表
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 将二叉搜索树转化为中序的双向链表
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 BinaryTreeNode* Convert(BinaryTreeNode* pRootOfTree){
     BinaryTreeNode* pLastNodeInList = nullptr;
     ConvertNode(pRootOfTree, &pLastNodeInList);

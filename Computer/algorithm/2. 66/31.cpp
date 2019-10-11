@@ -1,3 +1,13 @@
+/*
+ * 题目: 栈的压入, 弹出序列
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 输入两个序列, 第一个是压入序列, 判断第二个是否是弹出序列
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 bool IsPopOrder(const int*pPush, const int* pPop, intnLength){
     bool bPossible = false;
     if(pPush != nullptr && pPop != nullptr && nLength >0){

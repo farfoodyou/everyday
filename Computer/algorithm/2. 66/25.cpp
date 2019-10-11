@@ -3,7 +3,16 @@ struct ListNode {
     int m_nValue;
     ListNode* m_pNext;
 }
-
+/*
+ * 题目: 合并连个排序的链表
+ * 输入参数: 链表头节点A,列表头节点B
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 合并两个排序的链表
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 ListNode* Merge(ListNode* pHead1, ListNode* pHead2){
     if(pHead1 == nullptr){
         return pHead2;

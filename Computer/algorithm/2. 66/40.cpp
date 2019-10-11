@@ -1,3 +1,14 @@
+
+/*
+ * 题目: 最小的 k个数
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 输入n个数, 找出最小的 k 个数
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void GetLeastNumbers(int *input,int n,int *output,int k){
     if(intput == nullptr || output == nullptr || k >n || n<=0|| k<=0) {
         return ;

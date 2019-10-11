@@ -1,5 +1,15 @@
 bool g_InvalidInput = false;
 
+/*
+ * 题目: 连续子数组的最大和
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 int FindGreatestSumOfSubArray(int *pData, int nLength) {
     if((pData == nullptr) || nLength <= 0) {
         g_InvalidInput = true;

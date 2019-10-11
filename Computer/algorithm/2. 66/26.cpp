@@ -3,7 +3,16 @@ struct BinaryTreeNode {
     BinaryTreeNode* m_pLeft;
     BinaryTreeNode* m_pRight;
 }
-
+/*
+ * 题目: 树的子结构
+ * 输入参数: 二叉树a,二叉树b
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 输入两棵二叉树A, 和二叉树B, 判断B是否是A的子结构
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 bool HasSubtree(BinaryTreeNode* pRoot1, BinaryTreeNode* pRoot2){
     bool result = false;
     if(pRoot1 != nullptr && pRoot2 != nullptr) {

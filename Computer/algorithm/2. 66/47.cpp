@@ -1,3 +1,13 @@
+/*
+ * 题目: 礼物的最大价值
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: m * n的棋盘, 每次只能向下或者向右移动, 算出最后的, 礼物的最大价值
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 int getMax_solution(const int *values, int rows, int cols) {
     if (values = nullptr || rows <= 0 || col <= 0) {
         return 0;

@@ -1,4 +1,13 @@
-
+/*
+ * 题目: 在排序数组中查找数字
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 在排序数组中查找对应数字出现的次数
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 int GetFirstK(int* data, int length, int k, int start, int end){
     if(start > end){
         return -1;

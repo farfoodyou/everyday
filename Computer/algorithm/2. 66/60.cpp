@@ -1,4 +1,13 @@
-
+/*
+ * 题目: n个骰子的点数
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 投n个骰子, 算出和为k的概率是多少
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void PrintProbability(int number) {
     if (number < 1) {
         return ;

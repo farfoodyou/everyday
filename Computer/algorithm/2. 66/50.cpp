@@ -1,3 +1,13 @@
+/*
+ * 题目: 第一个只出现一次的字符
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 
+ * 例如: 在字符串中第一个只出现一次的字符
+ * 思路: 
+ * 注意事项: 
+*/
 char FirstNotRepeatingChar(char* pString){
     if(pString == nullptr){
         return '\0';

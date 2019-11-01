@@ -1,4 +1,13 @@
-
+/*
+ * 题目: 最长不含重复字符的子字符串
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 int longestSubstringWithoutDuplication(const std::string& str) {
     int curLength = 0;
     int maxLength = 0;

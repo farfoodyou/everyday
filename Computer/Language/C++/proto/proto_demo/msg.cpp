@@ -4,6 +4,21 @@
 #include <cstring>
 #include <google/protobuf/util/json_util.h>
 
+// 输入带参数的情况
+// 不带参数的情况
+// extend 实验, 用于测试没有数据的情况下, proto的表现
+int extend_test(const EchoMsg* emsg) {
+    if (emsg->HasExtension(task)){
+        std::cout << " HasExtension true" << std::endl;
+        auto ext = emsg->GetExtension(task);
+        std::cout << " ext " << ext << std::endl;
+    } else {
+        auto ext = emsg->GetExtension(task);
+        std::cout << " HasExtension false " << std::endl;
+    }
+    return 0;
+}
+
 int main(){
     EchoMsg emsg;
     emsg.set_msg("hi, my baby");
@@ -47,8 +62,15 @@ int main(){
 
     // proto to binary
     std::string binary_str;
-    google::protobuf::util::Mess(emsg_2, &binary_str);
+    // 这是proto3的写法
+    //google::protobuf::util::Mess(emsg_2, &binary_str);
     std::cout << binary_str << std::endl;
+
+    emsg.SetExtension(task, 145);
+    extend_test(&emsg);
+
+    extend_test(&emsg_2);
+    
     return 0;
 }
 
@@ -56,6 +78,9 @@ int main(){
 c++ msg.cpp msg.pb.h msg.pb.cc -o test -I/usr/local/protobuf/include -L/usr/local/protobuf/lib -lprotobuf -pthread
 
 g++ msg.cpp msg.pb.h msg.pb.cc  -o msg_test -std=c++11 -I /usr/local/include -L /usr/local/lib -lprotobuf -pthread
+
+clang: error: cannot specify -o when generating multiple output files
+g++ msg.cpp msg.pb.h msg.pb.cc -std=c++11 -I /usr/local/include -L /usr/local/lib -lprotobuf -pthread
 
 2019-03-11 14:37:45 昨天那个是因为没有使用c++11导致的.
 我靠...好吧, 果然, 对 c++ 的编译了解还不够透彻啊.

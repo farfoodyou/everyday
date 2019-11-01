@@ -2,7 +2,16 @@ struct ListNode{
     int m_nKey;
     ListNode* m_pNext;
 }
-
+/*
+ * 题目: 两个链表的第一个公共节点
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 输入两个链表找出第一个公共节点
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 ListNode* FindFirstCommonNode(ListNode* pHead1, ListNode* pHead2) {
     unsigned int nLength1 = GetListLength(pHead1);
     unsigned int nLength2 = GetListLength(pHead2);

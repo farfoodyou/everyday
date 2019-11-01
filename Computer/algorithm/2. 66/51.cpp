@@ -1,3 +1,13 @@
+/*
+ * 题目: 数组中的逆序对
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 找出数组中的逆序对的数量
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 int InversePairs(int *data, int length){
     if(data == nullptr || length < 0){
         return 0;

@@ -1,4 +1,13 @@
-
+/*
+ * 题目: 构建乘积数组
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 构建乘积数组, 不能用除法
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void multiply(const vector<double>& array1, vector<double>& array2) {
     int length1 = array1.size();
     int length2 = array2.size();

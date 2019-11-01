@@ -1,3 +1,13 @@
+/*
+ * 题目: 翻转字符串
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 给一串字符串, 翻转单词顺序但是单词不变.
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void Reverse(char* pBegin, char* pEnd){
     if(pBegin == nullptr || pEnd == nullptr){
         return ;

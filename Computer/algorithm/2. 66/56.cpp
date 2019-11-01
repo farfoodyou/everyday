@@ -1,3 +1,13 @@
+/*
+ * 题目: 数组中数字出现的次数
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 找出数组中数组只出现一次的数字
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void FindNumsAppearOnce(int data[], int length, int* num1, int*num2){
     if(data == nullptr || length < 2){
         return ;

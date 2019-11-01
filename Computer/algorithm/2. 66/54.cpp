@@ -1,3 +1,13 @@
+/*
+ * 题目: 二叉树搜索树的第a大节点
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 给一颗二叉搜索树, 找到其中第k大的节点
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 BinaryTreeNode* KthNode(BinaryTreeNode* pRoot, unsigned int k){
     if(pRoot == nullptr || k==0){
         return nullptr;

@@ -1,4 +1,13 @@
-
+/*
+ * 题目: 扑克牌中的顺子
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 从扑克牌中抽 5 章, 判断是否是一个顺子.
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 bool IsContinuous(int* numbers, int length) {
     if (numbers == nullptr || length < 1) {
         return false;

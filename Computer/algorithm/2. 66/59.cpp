@@ -1,3 +1,13 @@
+/*
+ * 题目: 队列的最大值
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 给定一个数组, 和滑动窗口的大小, 找出滑动窗口的最大值.
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 vector<int> maxInWindows(const vector<int>& num, unsigned int size){
     vector<int> maxInWindows;
     if(num.size() >= size && size> 1){

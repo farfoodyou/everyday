@@ -1,12 +1,21 @@
 
-syntax = "proto3";
+syntax = "proto2";
 
 message EchoMsg{
-    string msg = 1;
+    optional string msg = 1;
     repeated string tuple = 2;
     repeated Body body = 3;
+    extensions 100 to 199;
 }
 
 message Body {
     repeated string tuple = 1;
+}
+
+message SearchParams {
+    optional string params = 1;
+}
+
+extend EchoMsg {
+    optional int32 task = 101;
 }

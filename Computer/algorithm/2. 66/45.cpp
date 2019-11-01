@@ -2,6 +2,16 @@ const int g_MaxNumberLength = 10;
 char *g_StrCombine1 = new char[g_MaxNumberLength * 2 + 1];
 char *g_StrCombine2 = new char[g_MaxNumberLength * 2 + 1];
 
+/*
+ * 题目: 把数组排成最小的数
+ * 输入参数: 
+ * 输出参数: 
+ * 返回结果: 
+ * 描述: 将数组里的数字排成一个数字, 输出最小的数字
+ * 例如: 
+ * 思路: 
+ * 注意事项: 
+*/
 void PrintMinNumber(int *numbers, int length) {
     if (numbers == nullptr || length <= 0) {
         return ;

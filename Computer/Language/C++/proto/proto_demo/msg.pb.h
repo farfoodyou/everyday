@@ -41,7 +41,7 @@ struct TableStruct_msg_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::google::protobuf::internal::ParseTable schema[2]
+  static const ::google::protobuf::internal::ParseTable schema[3]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
@@ -54,10 +54,14 @@ extern BodyDefaultTypeInternal _Body_default_instance_;
 class EchoMsg;
 class EchoMsgDefaultTypeInternal;
 extern EchoMsgDefaultTypeInternal _EchoMsg_default_instance_;
+class SearchParams;
+class SearchParamsDefaultTypeInternal;
+extern SearchParamsDefaultTypeInternal _SearchParams_default_instance_;
 namespace google {
 namespace protobuf {
 template<> ::Body* Arena::CreateMaybeMessage<::Body>(Arena*);
 template<> ::EchoMsg* Arena::CreateMaybeMessage<::EchoMsg>(Arena*);
+template<> ::SearchParams* Arena::CreateMaybeMessage<::SearchParams>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 
@@ -90,6 +94,13 @@ class EchoMsg final :
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor() {
     return default_instance().GetDescriptor();
   }
@@ -192,7 +203,8 @@ class EchoMsg final :
   const ::google::protobuf::RepeatedPtrField< ::Body >&
       body() const;
 
-  // string msg = 1;
+  // optional string msg = 1;
+  bool has_msg() const;
   void clear_msg();
   static const int kMsgFieldNumber = 1;
   const ::std::string& msg() const;
@@ -206,15 +218,19 @@ class EchoMsg final :
   ::std::string* release_msg();
   void set_allocated_msg(::std::string* msg);
 
+  GOOGLE_PROTOBUF_EXTENSION_ACCESSORS(EchoMsg)
   // @@protoc_insertion_point(class_scope:EchoMsg)
  private:
   class HasBitSetters;
 
+  ::google::protobuf::internal::ExtensionSet _extensions_;
+
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::RepeatedPtrField<::std::string> tuple_;
   ::google::protobuf::RepeatedPtrField< ::Body > body_;
   ::google::protobuf::internal::ArenaStringPtr msg_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_msg_2eproto;
 };
 // -------------------------------------------------------------------
@@ -246,6 +262,13 @@ class Body final :
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor() {
     return default_instance().GetDescriptor();
   }
@@ -341,12 +364,146 @@ class Body final :
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField<::std::string> tuple_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::RepeatedPtrField<::std::string> tuple_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SearchParams final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:SearchParams) */ {
+ public:
+  SearchParams();
+  virtual ~SearchParams();
+
+  SearchParams(const SearchParams& from);
+
+  inline SearchParams& operator=(const SearchParams& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  SearchParams(SearchParams&& from) noexcept
+    : SearchParams() {
+    *this = ::std::move(from);
+  }
+
+  inline SearchParams& operator=(SearchParams&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const SearchParams& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const SearchParams* internal_default_instance() {
+    return reinterpret_cast<const SearchParams*>(
+               &_SearchParams_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  void Swap(SearchParams* other);
+  friend void swap(SearchParams& a, SearchParams& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SearchParams* New() const final {
+    return CreateMaybeMessage<SearchParams>(nullptr);
+  }
+
+  SearchParams* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SearchParams>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const SearchParams& from);
+  void MergeFrom(const SearchParams& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SearchParams* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional string params = 1;
+  bool has_params() const;
+  void clear_params();
+  static const int kParamsFieldNumber = 1;
+  const ::std::string& params() const;
+  void set_params(const ::std::string& value);
+  #if LANG_CXX11
+  void set_params(::std::string&& value);
+  #endif
+  void set_params(const char* value);
+  void set_params(const char* value, size_t size);
+  ::std::string* mutable_params();
+  ::std::string* release_params();
+  void set_allocated_params(::std::string* params);
+
+  // @@protoc_insertion_point(class_scope:SearchParams)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::internal::ArenaStringPtr params_;
   friend struct ::TableStruct_msg_2eproto;
 };
 // ===================================================================
 
+static const int kTaskFieldNumber = 101;
+extern ::google::protobuf::internal::ExtensionIdentifier< ::EchoMsg,
+    ::google::protobuf::internal::PrimitiveTypeTraits< ::google::protobuf::int32 >, 5, false >
+  task;
 
 // ===================================================================
 
@@ -356,22 +513,26 @@ class Body final :
 #endif  // __GNUC__
 // EchoMsg
 
-// string msg = 1;
+// optional string msg = 1;
+inline bool EchoMsg::has_msg() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
 inline void EchoMsg::clear_msg() {
   msg_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline const ::std::string& EchoMsg::msg() const {
   // @@protoc_insertion_point(field_get:EchoMsg.msg)
   return msg_.GetNoArena();
 }
 inline void EchoMsg::set_msg(const ::std::string& value) {
-  
+  _has_bits_[0] |= 0x00000001u;
   msg_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:EchoMsg.msg)
 }
 #if LANG_CXX11
 inline void EchoMsg::set_msg(::std::string&& value) {
-  
+  _has_bits_[0] |= 0x00000001u;
   msg_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:EchoMsg.msg)
@@ -379,31 +540,34 @@ inline void EchoMsg::set_msg(::std::string&& value) {
 #endif
 inline void EchoMsg::set_msg(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  
+  _has_bits_[0] |= 0x00000001u;
   msg_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:EchoMsg.msg)
 }
 inline void EchoMsg::set_msg(const char* value, size_t size) {
-  
+  _has_bits_[0] |= 0x00000001u;
   msg_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:EchoMsg.msg)
 }
 inline ::std::string* EchoMsg::mutable_msg() {
-  
+  _has_bits_[0] |= 0x00000001u;
   // @@protoc_insertion_point(field_mutable:EchoMsg.msg)
   return msg_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* EchoMsg::release_msg() {
   // @@protoc_insertion_point(field_release:EchoMsg.msg)
-  
-  return msg_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (!has_msg()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return msg_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void EchoMsg::set_allocated_msg(::std::string* msg) {
   if (msg != nullptr) {
-    
+    _has_bits_[0] |= 0x00000001u;
   } else {
-    
+    _has_bits_[0] &= ~0x00000001u;
   }
   msg_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), msg);
   // @@protoc_insertion_point(field_set_allocated:EchoMsg.msg)
@@ -581,9 +745,75 @@ Body::mutable_tuple() {
   return &tuple_;
 }
 
+// -------------------------------------------------------------------
+
+// SearchParams
+
+// optional string params = 1;
+inline bool SearchParams::has_params() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SearchParams::clear_params() {
+  params_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const ::std::string& SearchParams::params() const {
+  // @@protoc_insertion_point(field_get:SearchParams.params)
+  return params_.GetNoArena();
+}
+inline void SearchParams::set_params(const ::std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  params_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:SearchParams.params)
+}
+#if LANG_CXX11
+inline void SearchParams::set_params(::std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  params_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:SearchParams.params)
+}
+#endif
+inline void SearchParams::set_params(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  params_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:SearchParams.params)
+}
+inline void SearchParams::set_params(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  params_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:SearchParams.params)
+}
+inline ::std::string* SearchParams::mutable_params() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:SearchParams.params)
+  return params_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* SearchParams::release_params() {
+  // @@protoc_insertion_point(field_release:SearchParams.params)
+  if (!has_params()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return params_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void SearchParams::set_allocated_params(::std::string* params) {
+  if (params != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  params_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), params);
+  // @@protoc_insertion_point(field_set_allocated:SearchParams.params)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 

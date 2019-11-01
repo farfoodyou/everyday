@@ -9,7 +9,7 @@ struct ListNode {
  * 返回结果: 
  * 描述: 如数一个链表头结点, 将其反转后, 反转后的头结点.
  * 例如: 
- * 思路: 
+ * 思路: 用一个pNext记录下一个节点
  * 注意事项: 
 */
 ListNode* ReverseList(ListNode* pHead){

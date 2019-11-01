@@ -10,7 +10,7 @@ struct ListNode {
  * 返回结果: 
  * 描述: 合并两个排序的链表
  * 例如: 
- * 思路: 
+ * 思路: 注意考虑异常情况
  * 注意事项: 
 */
 ListNode* Merge(ListNode* pHead1, ListNode* pHead2){
@@ -30,3 +30,4 @@ ListNode* Merge(ListNode* pHead1, ListNode* pHead2){
     }
     return pMergeHead;
 }
+

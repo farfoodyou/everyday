@@ -11,7 +11,7 @@ class LRUCache{
     int get(int key){
         if(cacheMap.find(key) == cacheMap.end())
             return -1;
-        cacheList.splice(cacheList.begin(),cacheList.end());
+        cacheList.splice(cacheList.begin(),cacheList.end()); // 这里应该增加 cacheMap.find(key)吧?
         chcheMap[key] = chcheList.begin();
         return cacheMap[key]->value;
     }
